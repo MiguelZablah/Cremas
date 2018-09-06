@@ -29,5 +29,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-strip-comments": "^2.5.2",
     "gulp-strip-css-comments": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }
