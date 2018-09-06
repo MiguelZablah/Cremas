@@ -1,0 +1,35 @@
+html {
+	font-size: 10px;
+}
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+}
+// ::-webkit-scrollbar {
+// 	width: 8px;
+// 	height: 8px;
+// 	border-radius: 8px;
+
+// 	&-corner,
+// 	&-track {
+// 		background: $color-light;
+// 		background: $gradient-light;
+// 	}
+
+// 	&-thumb {
+// 		border-radius: 8px;
+// 		background: $color-primary;
+// 		background: $gradient-primary;
+// 	}
+
+// 	&-button {
+// 		display: none;
+// 	}
+// }
