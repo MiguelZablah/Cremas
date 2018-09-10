@@ -6,23 +6,209 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Cremas</title>
 	<!-- Note: Import CSS -->
+	<link rel="stylesheet" href="./css/fonts.css">
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-6">
-				Img
-			</div>
-			<div class="col-6 i18nAtt" data-i18n="title">
-				text
+	<header class="container-fluid header">
+		<div class="row header__sections-1">
+			<div class="col-md-12 header__head-container">
+				<img class="header__img-logo i18nImg" data-i18n="logo" src="../img/logo.png" alt="logo">
+				<div class="header__head-box">
+					<h1 class="header__head-title i18nAtt" data-i18n="header_title">
+						Title
+					</h1>
+				</div>
 			</div>
 		</div>
-	</div>
+		<div class="row header__sections-2">
+			<div class="col-md-12 header__subtitle-container">
+				<div class="header__subtitle-box">
+					<p class="header__subtitle-text i18nAtt" data-i18n="subtitle">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row header__sections-3">
+			<div class="col-lg-2 header__img-container">
+				<img class="header__img-1 i18nImg" data-i18n="mujer" src="../img/foto1.png" alt="mujer">
+				<img class="header__img-2 i18nImg" data-i18n="crema" src="../img/foto3.png" alt="crema">
+			</div>
+			<div class="col-lg-5 header__middle-container">
+				<div class="header__middle-box">
+					<div class="header__info-container">
+						<p class="header__info-text i18nAtt" data-i18n="info_1">
+							Elimina las
+							<span>agrruas</span>
+						</p>
+						<span class="header__info-side i18nAtt" data-i18n="info_1span">
+							78
+							<span>%</span>
+						</span>
+					</div>
+					<div class="header__info-container light">
+						<p class="header__info-text i18nAtt" data-i18n="info_2">
+							Elimina las
+							<span>agrruas</span>
+						</p>
+						<span class="header__info-side i18nAtt" data-i18n="info_2span">
+							98
+							<span>%</span>
+						</span>
+					</div>
+					<div class="header__info-container">
+						<p class="header__info-text i18nAtt" data-i18n="info_3">
+							Elimina las
+							<span>agrruas</span>
+						</p>
+						<span class="header__info-side i18nAtt" data-i18n="info_3span">
+							85
+							<span>%</span>
+						</span>
+					</div>
+					<div class="header__footer">
+						<div class="header__footer-oferta--container">
+							<div class="header__footer-oferta--text i18nAtt" data-i18n="header_footer-before">
+								Oferta valida solo en Mexico
+								<img src="../img/flagMexico.png" alt="flag">
+							</div>
+						</div>
+						<div class="header__footer-container">
+							<div class="header__footer-text i18nAtt" data-i18n="header_footer">
+								¡Solo pagas envio!
+								<span>¡No dejes pasar la oferta!</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 header__form-section">
+				<div class="header__form-container">
+					<h3 class="header__form-title i18nAtt" data-i18n="header_form-title">
+						¿A donde te enviamos tu muestra gratis?
+					</h3>
+					<form class="header__form">
+						<div class="form-group">
+							<input type="text" class="form-control header__form-input" id="name" placeholder="Nombre">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control header__form-input" id="email" placeholder="Correo">
+						</div>
+						<div class="form-group pt-4">
+							<input type="email" class="form-control header__form-input" id="calle" placeholder="Calle">
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="form-group">
+									<input type="text" class="form-control header__form-input" id="calle" placeholder="Municipio">
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<input type="text" class="form-control header__form-input" id="estado" placeholder="Estado">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="form-group">
+									<input type="text" class="form-control header__form-input" id="cp" placeholder="CP">
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group">
+									<input type="text" class="form-control header__form-input" id="pais" placeholder="Mexico">
+								</div>
+							</div>
+						</div>
+						<p class="header__form-subtext i18nAtt" data-i18n="header_footer-subtext">
+							Al darle clic a Continuar aceptas nuestros Terminos y Condiciones
+						</p>
+					</form>
+				</div>
+				<button type="submit" class="btn btn-secondary btn__cutoms i18nAtt" data-i18n="btn_text">Agiliza mi pedido</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="container-fluid doctor">
+		<div class="row">
+			<div class="col-lg-6">
+				<img class="doctor__img-1 i18nImg" data-i18n="doctor" src="./img/doctor.png" alt="doctor">
+			</div>
+			<div class="col-lg-6">
+				<div class="doctor__section-container">
+					<h2 class="doctor__section-title i18nAtt" data-i18n="doctor_title">
+						Tratamiento Antiedad:
+					</h2>
+					<h3 class="doctor__section-subtitle i18nAtt" data-i18n="doctor_subtitle">
+						Multiples
+						<span>Beneficios</span>
+					</h3>
+					<p class="doctor__section-text i18nAtt" data-i18n="doctor_text">
+						Text
+					</p>
+					<img class="doctor__img-2 i18nImg" data-i18n="doctor1" src="./img/doctor1.png" alt="Antes y Despues">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid questions">
+		<div class="row">
+			<div class="questions__container">
+				<div id="triviaTitle" class="questions__title i18nAtt" data-i18n="trivia_title">
+					Como cuidar tu piel
+				</div>
+				<div id="trivia" class="trivia__container">
+					<div id="trivia_quiz"></div>
+					<button class="btn btn-secondary btn__cutoms" onclick="calcTrivia()">Terminar</button>
+					<div id="trivia_results"></div>
+				</div>
+				<div id="questions__results" class="questions__results">
+					<img class="questions__results-img i18nImg" data-i18n="resImg" src="./img/foto2.png" alt="resultImg">
+					<p id="triviaText" class="questions__results-text">
+						Aplica crema OMM con un suave masaje para la estimular la circulación.
+						Mantén tu piel fresca con los cuidados de día y noche.
+						Una exfoliación suave, una o dos veces por semana para  eliminar las impureza
+					</p>
+					<button class="btn btn-secondary btn__cutoms i18nAtt" data-i18n="btn_text">Agiliza mi pedido</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Note: Import JS -->
 	<script src="./js/proximus-min.js"></script>
+	<script src="./js/trivia-min.js"></script>
 	<script src="./js/lang.js"></script>
-	<script src="./js/main.js"></script>
+	<script>
+		// START Proximus
+		proximus.init(langObj, 'es');
+		// START Trivia
+		trivia.init(proximus.getKeyValue(langObj, 'triviaObj'));
+
+		function calcTrivia() {
+			var triviaRes = trivia.getCheck();
+			var count = {};
+    		triviaRes.forEach(function(i) { count[i] = (count[i]||0) + 1;});
+			let max = Object.keys(count).reduce((a, b) => count[a] > count[b] ? a : b);
+			document.getElementById("trivia").style.display = "none";
+			document.getElementById("questions__results").style.display = "block";
+			var resObj = proximus.getKeyValue(langObj, 'respuestas');
+			console.log(resObj);
+			if(max === 'a'){
+				document.getElementById("triviaTitle").innerHTML = resObj.A.titulo;
+				document.getElementById("triviaText").innerHTML = resObj.A.text;
+			}else if(max === 'b'){
+				document.getElementById("triviaTitle").innerHTML = resObj.B.titulo;
+				document.getElementById("triviaText").innerHTML = resObj.B.text;
+			}else{
+				document.getElementById("triviaTitle").innerHTML = resObj.Other.titulo;
+				document.getElementById("triviaText").innerHTML = resObj.Other.text;
+			}
+		}
+	</script>
 </body>
 </html>

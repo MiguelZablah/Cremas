@@ -1,0 +1,390 @@
+.header{
+	background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+	
+	@include media(990px){
+		padding: 0;
+	}
+
+	&__sections{
+		&-1{
+			height: 25vh;
+
+			@include media(990px){
+				display: contents;
+			}
+			
+			@include media(1165px){
+				height: 15vh;
+			}
+		}
+		&-2{
+			height: 2vh;
+			
+			@include media(990px){
+				display: contents;
+			}
+			@include media(1165px){
+				height: 5vh;
+			}
+		}
+		&-3{
+			height: 74vh;
+
+			@include media(990px){
+				display: contents;
+			}
+			@include media(1165px){
+				height: 81vh;
+			}
+		}
+	}
+
+	&__head{
+		&-container{
+			display: flex;
+  			justify-content: center;
+		}
+
+		&-box{
+			width: 50%;
+			margin-top: 10px;
+			text-align: center;
+			display: flex;
+    		justify-content: center;
+    		align-items: center;
+		}
+
+		&-title{
+			text-transform: uppercase;
+			display: block;
+			font-size: 6.9rem;
+    		line-height: .79;
+			color: $primary;
+
+			& > span{
+				font-size: 14.5rem;
+				display: block;
+				font-weight: 600;
+				color: $purpel;
+			}
+		}
+		
+	}
+	
+	&__subtitle{
+		&-container{
+			display: flex;
+  			justify-content: center;
+			align-items: center;
+		}
+
+		&-box{
+			width: 50%;
+			z-index: 1;
+
+			@include media(967px){
+				width: 100%;
+			}
+		}
+
+		&-text{
+			text-align: center;
+			font-size: 1.7rem;
+			color: $black;
+			display: flex;
+    		justify-content: center;
+	    	align-items: flex-end;
+
+			& > img {
+				margin-left: 10px;
+
+				@include media(650px){
+					margin-left: unset;
+				}
+			}
+		}
+	}
+
+	&__middle{
+		&-container{
+			display: flex;
+  			justify-content: center;
+		}
+
+		&-box{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: start;
+			margin-top: 6.5rem;
+		}
+	}
+
+	&__info{
+		margin-top: -10%;
+		&-container{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			line-height: 1;
+			width: 80%;
+			padding: 1.5rem;
+			margin-top: 1rem;
+			background-color: $primary;
+			z-index: 0;
+
+			@include media(1169px){
+				width: 90%;
+			}
+			
+			@include mediaM(1432px){
+				margin-left: -10rem;
+			}
+
+			@include media(990px){
+				margin: 0 auto;
+				justify-content: center;
+			}
+
+			&.light{
+				background-color: $primary-light;
+			}
+		}
+
+		&-text{
+			display: block;
+			margin-bottom: 0;
+			text-align: end;
+			margin-right: 2rem;
+			color: $white;
+			text-transform: uppercase;
+    		font-size: 2.2rem;
+			
+			& > span{
+				display: block;
+				font-size: 2rem;
+				color: $white-light;
+				font-family: 'Gotham_light';
+			}
+		}
+
+		&-side{
+			display: flex;
+			height: 100%;
+			font-size: 3.4rem;
+			font-weight: 800;
+			margin-right: 1rem;
+			color: $white;
+			
+			& > span {
+				font-size: 1.8rem;
+				color: $white;
+				align-self: flex-end;
+			}
+		}
+	}
+
+	&__footer{
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		flex: 1 0 25%;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 39px;
+
+		@include media(990px){
+			width: 90%;
+			margin: 0 auto;
+			justify-content: center;
+			margin-top: 15px;
+		}
+
+		&-container{
+			position: relative;
+			width: 100%;
+			background-color: $purpel;
+			z-index: 1;
+
+			&::before{
+				content: "";
+				position: absolute;
+				top: -.5rem;
+				right: -3.3rem;
+				z-index: 1;
+				border-top: 3.5rem solid transparent;
+				border-bottom: 3.5rem solid transparent;
+				border-left: 3.8rem solid $purpel;
+				border-radius: 1.8rem;
+				
+				@include media(1167px){
+					border-top: 4.5rem solid transparent;
+					border-bottom: 4.5rem solid transparent;
+					border-left: 3.7rem solid $purpel;
+				}
+				
+				@include media(1165px){
+					border-top: 3.8rem solid transparent;
+    				border-bottom: 3.8rem solid transparent;
+				}
+
+				@include media(990px){
+					border: unset;
+				}
+			}
+		}
+
+		&-oferta{
+			&--container{
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding-bottom: 5px;
+
+				@include media(990px){
+					justify-content: center;
+				}
+			}
+			&--text{
+				font-size: 1.5rem;
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				
+				@include media(990px){
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+
+		&-text{
+			display: block;
+			font-size: 1.7rem;
+			color: #fff;
+			line-height: 1.2;
+			text-align: center;
+			margin-left: 40%;
+			padding: 10px 0;
+
+			@include media(990px){
+				margin-left: unset;
+			}
+		
+			& > span{
+				text-transform: uppercase;
+				display: block;
+				color: inherit;
+			}
+		}
+	}
+
+	&__form{
+		&-section{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 100%;
+
+			@include media(990px){
+				height: unset;
+				justify-content: flex-start;
+				padding-bottom: 15px;
+			}
+		}
+		
+		&-container{
+			width: 100%;
+			max-width: 400px;
+			padding: 25px;
+			background-color: $white;
+		}
+
+		&-title{
+			background-color: $primary;
+			color: $white;
+			padding: 15px 0px;
+    		font-size: 1.5rem;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		&-input{
+			height: 45px;
+			box-shadow: $shadow-light;
+			font-size: 1.4rem;
+		}
+
+		&-subtext{
+			font-size: 1.3rem;
+			color: $grey;
+		}
+	}
+
+	&__img{
+		&-container{
+			height: inherit;
+			position: relative;
+			padding-left: 0;
+		}
+
+		&-logo{
+			max-height: 125px;
+			max-width: 125px;
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			@include media(650px){
+				top: 166px;
+			}
+		}
+
+		&-1,
+		&-2{
+			position: absolute;
+		}
+
+		&-1{
+			min-width: 45rem;
+			bottom: 0;
+			z-index: 1;
+
+			@include media(985px){
+				width: 45rem;
+			}
+
+			@include media(450px){
+				width: 60rem;
+			}
+
+
+		}
+
+		&-2{
+			min-width: 35rem;
+			bottom: 0;
+    		left: 35%;
+			z-index: 2;
+
+			@include media(967px){
+				left: unset;
+				right: 5%;
+			}
+
+			@include media(985px){
+				width: 35rem;
+			}
+			
+			@include media(650px){
+				width: 40rem;
+			}
+
+		}
+	}
+	
+}

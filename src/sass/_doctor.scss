@@ -1,0 +1,51 @@
+.doctor{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-size: cover;
+	text-align: center;
+
+	&__section{
+		&-container{
+			height: 100%;
+			padding: 25px;
+			background-color: $white;
+			box-shadow: $shadow-light;
+		}
+
+		&-title{
+			text-align: start;
+			color: $purpel-dark;
+			font-size: 2.5rem;
+
+		}
+
+		&-subtitle{
+			font-size: 5rem;
+			color: $purpel;
+			text-align: start;
+			font-weight: bold;
+			margin-bottom: 1rem;
+			
+			& > span {
+				color: $orange;
+			}
+		}
+
+		&-text{
+			font-size: 1.5rem;
+			text-align: start;
+			margin-bottom: 4rem;
+		}
+	}
+
+	&__img{
+		&-1{
+			height: 100%;
+    		max-width: 100%;
+		}
+		&-2{
+			width: 70%;
+    		max-height: 100%;
+		}
+	}
+}

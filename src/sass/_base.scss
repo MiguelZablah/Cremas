@@ -1,5 +1,13 @@
 html {
 	font-size: 10px;
+
+	@include media(1165px){
+		font-size: 8px;
+	}
+	
+	@include media(461px){
+		font-size: 5px;
+	}
 }
 html,
 body {
@@ -7,8 +15,13 @@ body {
 	width: 100vw;
 }
 body{
+	font-family: $primary-font;
 	font-size: 2rem;
 	font-weight: 500;
+	overflow-x: hidden;
+	background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 *,
 *:before,
@@ -16,24 +29,24 @@ body{
 	box-sizing: border-box;
 	margin: 0;
 }
-// ::-webkit-scrollbar {
-// 	width: 8px;
-// 	height: 8px;
-// 	border-radius: 8px;
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
 
-// 	&-corner,
-// 	&-track {
-// 		background: $color-light;
-// 		background: $gradient-light;
-// 	}
+	&-corner,
+	&-track {
+		background: $primary-light;
+		background: $primary-light;
+	}
 
-// 	&-thumb {
-// 		border-radius: 8px;
-// 		background: $color-primary;
-// 		background: $gradient-primary;
-// 	}
+	&-thumb {
+		border-radius: 8px;
+		background: $primary;
+		background: $primary;
+	}
 
-// 	&-button {
-// 		display: none;
-// 	}
-// }
+	&-button {
+		display: none;
+	}
+}

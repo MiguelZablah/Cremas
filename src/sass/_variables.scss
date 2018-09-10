@@ -1,0 +1,23 @@
+/* Fonts Family */
+$primary-font: 'Gotham', Roboto,"Helvetica Neue",Arial,sans-serif;
+
+/* Colors*/
+$primary: #36666c;
+$primary-light: #519ea7;
+$primary-gradient: linear-gradient(0.25turn, $primary, #c5fcff, $primary);
+
+$secondary: #e79b17;
+
+$purpel: #9d0686;
+$purpel-dark: #005d65;
+
+$white: #fff;
+$white-light: unquote('#ffffffad');
+
+$grey: #ccc;
+
+$black: #222;
+
+/* Shadows */
+$shadow-dark: -1px 3px 10px #2f2e2e;
+$shadow-light: 1px 1px 8px #c1c1c1;

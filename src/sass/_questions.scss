@@ -1,0 +1,38 @@
+.questions{
+	display: flex;
+    justify-content: center;
+	padding: 15px 0;
+
+	&__container{
+		background-color: $white;
+		text-align: center;
+		box-shadow: $shadow-dark;
+	}
+
+	&__title{
+		background-color: $primary;
+		color: $white;
+		text-transform: uppercase;
+		padding: 10px;
+		margin-top: 20px;
+		font-size: 3rem;
+	}
+
+	&__results{
+		display: none;
+		margin-bottom: 15px;
+		padding: 15px;
+		width: 100%;
+		max-width: 500px;
+
+		&-text{
+			text-align: justify;
+			padding: 15px;
+			font-size: 1.7rem;
+		}
+
+		&-img{
+			width: 100%;
+		}
+	}
+}
