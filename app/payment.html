@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cremas</title>
+	<!-- Note: Import CSS -->
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+	<section class="container-fluid payment">
+		<div class="row payment__conatiner">
+			<div class="col-lg-8 payment__pr">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="payment__tabs-conatiner">
+							<ul class="nav nav-tabs nav-fill payment__tabs">
+								<li class="nav-item payment__tabs-tab">
+									<a class="nav-link" href="#">1. Datos de Envio</a>
+								</li>
+								<li class="nav-item payment__tabs-tab">
+									<a class="nav-link active" href="#">2. Pago</a>
+								</li>
+								<li class="nav-item payment__tabs-tab">
+									<a class="nav-link" href="#">3. Envio de producto</a>
+								</li>
+							</ul>
+							<div class="tab-content payment__tabs-text--container">
+								<div class="tab-pane payment__tabs-text active" id="pago" role="tabpanel" aria-labelledby="pago">
+									<p class="payment__tabs-text--1">
+										¡DATE PRISA! 
+										<label for="solo" class="payment__tabs-label">
+											SOLO QUEDAN
+											<input class="payment__tabs-input" type=text name="solo" value="3"/>
+										</label>
+										<span>Inventario limitado</span>
+									</p>
+									<p class="payment__tabs-text--2">
+										Recibirás una crema con valor de $299MXN
+									</p>
+									<p class="payment__tabs-text--3">
+										¡Gratis!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-2">
+					<div class="col-md-6">
+						<img class="payment__img" src="./img/foto6.png" alt="crema agua">
+					</div>
+					<div class="col-md-6 payment__table-container">
+						<table class="table payment__table">
+							<tbody class="payment__table-tbody">
+								<tr>
+									<td class="payment__bold">Omm ANTI ARRUGAS</td>
+									<td class="payment__gratis">Gratis</td>
+								</tr>
+								<tr class="payment__table-tr">
+									<td>Envío</td>
+									<td>$120 MXN</td>
+								</tr>
+								<tr>
+									<td class="payment__bold">Total</td>
+									<td class="payment__bold">$120 MXN</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header__footer payment__footer">
+							<div class="header__footer-oferta--container payment__oferta">
+								<div class="header__footer-oferta--text payment__oferta-text i18nAtt" data-i18n="header_footer-before">
+									Oferta válida solo en México
+									<img src="../img/flagMexico.png" alt="flag">
+								</div>
+							</div>
+							<div class="header__footer-container payment__oferta-container">
+								<div class="header__footer-text payment__footer-text i18nAtt" data-i18n="payment_footer">
+									Solo pagas envío
+								</div>
+							</div>
+						</div>
+						<div class="payment__footer-img">
+							<img src="./img/ups.png" alt="UPS">
+							<img src="./img/estafeta.png" alt="Estafeta">
+							<img src="./img/dhl.png" alt="DHL">
+							<img src="./img/fedex.png" alt="FedEx">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 payment__pl order-first order-md-2">
+				<div class="payment__card-container">
+					<div class="payment__card-title--conatiner">
+						<h2 class="payment__card-title">
+							Información del pago
+						</h2>
+					</div>
+					<div class="payment__info-container">
+						<h1 class="payment__info-title i18nAtt" data-i18n="banner_title">
+							Mas joven<span>sin cirugia</span>
+						</h1>
+						<p class="payment__info-subtitle">
+							Solo pagas el envio de $120MXN
+							<span>Recibirás una crema con valor de $299MXN</span>
+						</p>
+						<div class="payment__info-img--container">
+							<img class="payment__info-img" src="./img/visa.png" alt="visa">
+						</div>
+						<form role="form" class="payment__form">
+							<!-- <div class="form-group">
+								<label for="username" class="payment__form-label">Full name (on the card)</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><i class="fa fa-user"></i></span>
+									</div>
+									<input type="text" class="form-control payment__form-input" name="username" placeholder="" required="">
+								</div>
+							</div> -->
+
+							<div class="form-group">
+								<label for="cardNumber" class="payment__form-label">Número de tarjeta</label>
+								<div class="input-group">
+									<!-- <div class="input-group-prepend">
+										<span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+									</div> -->
+									<input type="text" class="form-control payment__form-input" name="cardNumber" placeholder="">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-8">
+									<div class="form-group">
+										<label for="mes" class="payment__form-label">Fecha de expiración</label>
+										<div class="form-inline">
+											<input type="text" class="form-control payment__form-input" name="mes" style="width:45%" placeholder="Mes">
+											<span style="width:10%; text-align: center"> </span>
+											<input type="text" class="form-control payment__form-input" name="ano" style="width:45%" placeholder="Año">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for="cvv" class="payment__form-label">cvv:</label>
+										<input class="form-control payment__form-input" name="cvv" type="text">
+									</div>
+								</div>
+							</div>
+						</form>
+						<button type="button" class="btn btn-secondary btn__custom payment__btn i18nAtt" data-i18n="btn_payment" onclick="goConfirm()">Muestra gratis</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Note: Import JS -->
+	<script src="./js/proximus-min.js"></script>
+	<script src="./js/lang.js"></script>
+	<script src="./js/main-min.js"></script>
+	<script>
+		// START Proximus
+		proximus.init(langObj, 'es');
+	</script>
+</body>
+</html>

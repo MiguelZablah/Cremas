@@ -207,8 +207,13 @@
 		&-container{
 			position: relative;
 			width: 100%;
-			background-color: $purpel;
+			background: $purpel;
+			box-shadow: $shadow-dark;
 			z-index: 1;
+
+			@include media(990px){
+				margin-top: 20px;
+			}
 
 			&::before{
 				content: "";
@@ -244,16 +249,18 @@
 				justify-content: flex-end;
 				align-items: center;
 				padding-bottom: 5px;
-
-				@include media(990px){
-					justify-content: center;
-				}
 			}
 			&--text{
 				font-size: 1.5rem;
 				display: flex;
 				justify-content: flex-end;
 				align-items: flex-end;
+
+				& > img {
+					@include media(990px){
+						margin-left: 10px;
+					}
+				}
 				
 				@include media(990px){
 					justify-content: center;
@@ -269,7 +276,7 @@
 			line-height: 1.2;
 			text-align: center;
 			margin-left: 40%;
-			padding: 10px 0;
+			padding: 20px 0;
 
 			@include media(990px){
 				margin-left: unset;
@@ -300,9 +307,14 @@
 		
 		&-container{
 			width: 100%;
-			max-width: 400px;
+			// max-width: 400px;
 			padding: 25px;
 			background-color: $white;
+
+			@include media(990px){
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
 		}
 
 		&-title{

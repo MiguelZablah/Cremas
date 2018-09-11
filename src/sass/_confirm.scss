@@ -48,8 +48,10 @@
 	&__img{
 		&-1{
 			width: 94%;
+			max-width: 600px;
 			position: absolute;
 			bottom: 0;
+			
 			@include media(990px){
 				position: relative;
 				bottom: 0;

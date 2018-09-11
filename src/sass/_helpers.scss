@@ -13,3 +13,8 @@
     border-radius: 6px;
     box-shadow: -1px 3px 10px #2f2e2e;
 }
+
+.form-control:focus{
+    background-color: #fff3d9;
+    border-color: #ff8804;
+}

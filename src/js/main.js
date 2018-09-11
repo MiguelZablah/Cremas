@@ -34,3 +34,11 @@ function goForm() { // eslint-disable-line
 function goHome() { // eslint-disable-line
 	window.location.href = '/';
 }
+
+function goPayment() { // eslint-disable-line
+	window.location.href = 'payment.html';
+}
+
+function goConfirm() { // eslint-disable-line
+	window.location.href = 'confirm.html';
+}

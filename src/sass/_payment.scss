@@ -1,0 +1,298 @@
+.payment{
+	height: 100%;
+	background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+	&__pl{
+		padding-left: 0;
+		
+		@include media(990px){
+			padding-left: 15px;
+			margin-top: 30px;
+		}
+	}
+	&__pr{
+		padding-right: 0;
+		
+		@include media(990px){
+			padding-right: 15px;
+		}
+	}
+
+	&__bold{
+		font-weight: bold;
+	}
+
+	&__gratis{
+		font-weight: bold;
+		color: $primary;
+		text-transform: uppercase;
+	}
+
+	&__conatiner{
+		height: 100%;
+	}
+
+	&__card{
+		&-container{
+			background-color: $white;
+			text-align: center;
+			border: 1px solid $secondary;
+			margin-top: 6rem;
+			height: 90%;
+
+			@include media(1198px){
+				height: 80%;
+			}
+			
+			@include media(1064px){
+				height: 70%;
+			}
+			
+			@include media(990px){
+				height: 100%;
+				max-width: 600px;
+    			margin: 0 auto;
+			}
+		}
+
+		&-title{
+			text-transform: uppercase;
+			font-size: 2rem;
+			padding: 8px;
+
+			&--conatiner{
+				background-color: $secondary;
+				color: $white;
+			}
+		}
+	}
+
+	&__info{
+		&-container{
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 95%;
+			justify-content: space-around;
+		}
+
+		&-title{
+			display: block;
+			text-transform: uppercase;
+			color: $primary;
+			font-size: 4rem;
+    		font-weight: bold;
+			padding-bottom: 15px;
+
+			& > span{
+				font-size: 5rem;
+				display: block;
+				color: $primary-light;
+			}
+		}
+
+		&-subtitle{
+			display: block;
+			color: $red;
+			font-size: 1.5rem;
+
+			& > span {
+				display: block;
+				color: $black;
+			}
+		}
+
+		&-img{
+			width: 100%;
+			max-width: max-content;
+		    padding: 30px 0;
+
+			&--container{
+				width: 100%;
+			}
+		}
+
+	}
+
+	&__form{
+		text-align: start;
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+
+		&-input{
+			background-color: $grey-light;
+    		border-radius: unset;
+			padding: 1.4rem .75rem;
+		}
+	}
+
+	&__btn{
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+
+	&__tabs{
+		&-conatiner{
+			margin-top: 6rem;
+		}
+
+		&-tab{
+			background-color: $grey;
+
+			& > a {
+				color: $black;
+			
+				&.nav-link.active{
+					background-color: $grey-dark;
+					color: $white;
+				}
+			}
+
+		}
+
+		&-label{
+			display:inline-block;
+			font-size: 1.2rem;
+			padding-left: 6rem;
+			text-align: start;
+
+			@include media(688px){
+				font-size: 1rem;
+				padding-left: unset;
+			}
+		}
+
+		&-input{
+			display: block;
+			font-size: 2rem;
+			height: 30px;
+			width: 130px;
+			color: $red;
+			padding: 0 10px;
+			
+			@include media(688px){
+				padding: 0 5px;
+				width: 70px;
+			}
+		}
+
+		&-text{
+			&--container{
+				background-color: $white;
+				padding: 20px 50px;
+				font-size: 2rem;
+				text-align: end;
+
+				@include media(615px){
+					padding: 20px 5px;
+					text-align: center;
+				}
+			}
+
+			&--1{
+				font-size: 2.7rem;
+				text-transform: uppercase;
+
+				& > span {
+					color: $red;
+					font-size: 2rem;
+    				padding-left: 10px;
+
+					@include media(688px){
+						padding-left: unset;
+					}
+					
+					@include media(615px){
+						font-size: 1.5rem;
+					}
+				}
+			}
+			
+			&--2{
+				font-size: 2.5rem;
+			}
+
+			&--3{
+				font-size: 2.7rem;
+				text-transform: uppercase;
+				color: $red;
+			}
+		}
+	}
+
+	&__table{
+		background-color: $white;
+		width: 95%;
+
+		&-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&-tbody{
+			display: table;
+			margin: 0 auto;
+			width: 95%;
+		}
+
+		&-tr{
+			border-top: .2rem solid $black;	
+			border-bottom: .2rem solid $black;	
+		}
+	}
+
+	&__footer{
+		flex: unset;
+    	height: unset;
+    	margin-bottom: unset;
+    	width: 100%;
+		
+		&-text{
+			font-size: 2.2rem;
+    		padding: 17px 57px;
+    		text-align: end;
+			text-transform: uppercase;
+
+			@include media(990px){
+				text-align: center;
+			}
+		}
+
+		&-img{
+			text-align: end;
+    		padding-right: 10px;
+			
+			@include media(990px){
+				text-align: center;
+			}
+		}
+	}
+
+	&__oferta{
+		padding-right: 2rem;
+
+		&-container{
+			width: 104%;
+
+			@include media(990px){
+				width: 100%;
+			}
+		}
+
+		&-text{
+			font-size: 1.2rem;
+
+			& > img{
+				padding-left: 1rem;
+			}
+		}
+	}
+
+	&__img{
+		width: 100%;
+	}
+}

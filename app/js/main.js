@@ -33,3 +33,11 @@ function goForm() {
 function goHome() {
   window.location.href = '/';
 }
+
+function goPayment() {
+  window.location.href = 'payment.html';
+}
+
+function goConfirm() {
+  window.location.href = 'confirm.html';
+}

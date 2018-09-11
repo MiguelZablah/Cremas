@@ -3,7 +3,7 @@ var langObj = { // eslint-disable-line
 		// HEADER
 		header_title: 'Mejor que el<span>botox</span>',
 		subtitle:
-			'limite a una crema de prueba por cliente, solo quedan <img src="../img/contador.gif" alt="contador">',
+			'Límite a una crema de prueba por cliente, Ya enviamos: <img src="../img/contador.gif" alt="contador">',
 		logo: '../img/logo.png',
 		heade_img1: '../img/foto1.png',
 		heade_img2: '../img/foto3.png',
@@ -15,11 +15,11 @@ var langObj = { // eslint-disable-line
 		info_3span: '85<span>%</span>',
 		'header_footer-before':
 			'Oferta valida solo en Mexico <img src="../img/flagMexico.png" alt="bander mexico">',
-		header_footer: '¡Solo pagas envio!<span>¡No dejes pasar la oferta!</span>',
-		'header_form-title': '¿A donde te enviamos tu muestra gratis?',
+		header_footer: 'Obtén tu muestra GRATIS aquí',
+		'header_form-title': 'Dirección de envío',
 		'header_footer-subtext':
 			'Al darle clic a Continuar aceptas nuestros Terminos y Condiciones',
-		btn_text: 'Agiliza mi pedido',
+		btn_text: '¡MUESTRA GRATIS!',
 
 		// Doctor
 		doctor: '../img/doctor.png',
@@ -30,7 +30,7 @@ var langObj = { // eslint-disable-line
 			'Tenemos como objetivo brindar a todas las mujeres un producto de calidad. 100% libre de fragancia y parabenos. Totalmente seguro para pieles sensibles. Un producto que tiene como resultado mantener una piel saludable, hermosa y súper hidratada.<br/><br/>Nuestro tratamiendo corrige los 5 signos más visibles del envejecimiento. Ayuda a mejorar la firmeza, redefine el contorno del rostro, mejora la elasticidad, restaura la apariencia jóven y minimiza las arrugas. Los poros se reducen y la textura de la piel se suaviza.<br/><br/>La fórmula contiene el balance perfecto de vitaminas e ingredientes especializados, que dara como resultado la mejora de salud y belleza para todos los tipos de piel.<br/>',
 
 		// Trivia
-		trivia_title: 'Como cuidar tu piel',
+		trivia_title: 'Test: Como cuidar tu piel',
 		resImg: './img/foto2.png',
 		triviaObj: [
 			{
@@ -102,15 +102,19 @@ var langObj = { // eslint-disable-line
 		},
 
 		// Banner
-		banner_title: 'Mas Joven <span>Sin Cirugia</span>',
-		banner_img1: './img/foto3.png',
+		banner_title: 'Más Joven <span>Sin Cirugía</span>',
+		banner_img1: './img/foto6.png',
 		banner_img2: './img/foto4.png',
 
 		// Confirm
 		confirm_img1: './img/foto5.png',
 		confirm_img2: './img/foto6.png',
 		confirm_title: '¡Tu muestra <span>gratis</span><br>ya esta en camino!',
-		confirm_subtitle: 'Para mas informacion email@omm.com',
+		confirm_subtitle: ' Para más información email@omm.com',
 		btn_confirm: 'Salir',
+
+		// Payment
+		payment_footer: 'Solo pagas envío',
+		btn_payment: 'Terminar',
 	}
 };
