@@ -15,7 +15,7 @@ var langObj = { // eslint-disable-line
 		info_3span: '85<span>%</span>',
 		'header_footer-before':
 			'Oferta válida solo en Mexico <img src="../img/flagMexico.png" alt="bander mexico">',
-		header_footer: 'Obtén tu muestra &nbsp&nbsp<span class="animated pulse">GRATIS</span>&nbsp&nbsp aquí',
+		header_footer: 'Obtén tu muestra &nbsp<span class="animated pulse">GRATIS</span>&nbsp aquí',
 		'header_form-title': 'Dirección de envío',
 		'header_footer-subtext':
 			'Al darle clic a Continuar aceptas nuestros Terminos y Condiciones',
@@ -87,17 +87,17 @@ var langObj = { // eslint-disable-line
 			A: {
 				titulo: 'PIEL NORMAL',
 				text:
-				'Aplica crema OMM con un suave masaje para la estimular la circulación.<br/>Mantén tu piel fresca con los cuidados de día y noche.<br/>Una exfoliación suave, una o dos veces por semana para  eliminar las impureza'
+				'<ul><li>Aplica crema OMM con un suave masaje para la estimular la circulación.</li><li>Mantén tu piel fresca con los cuidados de día y noche.</li><li>Una exfoliación suave, una o dos veces por semana para  eliminar las impureza</li></ul>'
 			},
 			B: {
 				titulo: 'PIEL DESHIDRATADA',
 				text:
-				'Utiliza una crema OMM para  hidratar tu piel día y noche.<br/>Evita el uso de jabón y las exposiciones al frío y al viento.  o productos grasos<br/>Utiliza limpiadores que contengan aceites vegetales<br/>Bebe varios vasos de agua al día.'
+				'<ul><li>Utiliza una crema OMM para hidratar tu piel día y noche.</li><li>Evita el uso de jabón y las exposiciones al frío y al viento.  o productos grasos</li><li>Utiliza limpiadores que contengan aceites vegetales</li><li>Bebe varios vasos de agua al día.</li></ul>'
 			},
 			Other: {
 				titulo: 'PIEL SENSIBLE',
 				text:
-				'Utiliza una crema OMM para  proteger tu piel frente a los factores ambientales nocivos.<br/>Después de limpiar tu rostro, seca tu piel con una toalla dando suaves toquecitos sobre ella en lugar de frotarla con fuerza.<br/>Utiliza productos sin fragancias.'
+				'<ul><li>Utiliza una crema OMM para  proteger tu piel frente a los factores ambientales nocivos.</li><li>Después de limpiar tu rostro, seca tu piel con una toalla dando suaves toquecitos sobre ella en lugar de frotarla con fuerza.</li><li>Utiliza productos sin fragancias.</li></ul>'
 			}
 		},
 
