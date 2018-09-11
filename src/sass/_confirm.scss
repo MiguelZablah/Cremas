@@ -1,0 +1,97 @@
+.confirm{
+	height: 100vh;
+	overflow: hidden;
+	background-image: url(../img/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+	
+	@include media(990px){
+		overflow: auto;
+	}
+
+	&__container{
+		&-1{
+			height: 50vh;
+			display: flex;
+			justify-content: center;
+			align-content: flex-end;
+			width: 70%;
+    		margin: 0 26%;
+
+			@include media(990px){
+				align-content: center;
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+		&-2{
+			height: 50vh;
+		}
+	}
+
+	&__text{
+		color: $primary-light;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 6rem;
+
+		& > span {
+			color: $purpel;
+		}
+	}
+
+	&__subtext{
+		font-size: 1rem;
+	    padding-top: 10px;
+	}
+
+	&__img{
+		&-1{
+			width: 94%;
+			position: absolute;
+			bottom: 0;
+			@include media(990px){
+				position: relative;
+				bottom: 0;
+				max-width: fit-content;
+			}
+			@include media(760px){
+				display: none;
+			}
+		}
+		&-2{
+			&--container{
+				text-align: end;
+				padding-left: 10px;
+			
+				@include media(990px){
+					display: flex;
+					justify-content: center;
+					align-content: center;
+					align-items: flex-end;
+				}
+			}
+			height: 100%;
+			
+			@include media(990px){
+				height: unset;
+				width: 100%;
+    			max-width: fit-content;
+			}
+		}
+	}
+
+	&__btn{
+		width: 25%;
+		margin-top: 50px;
+
+		@include media(600px){
+			width: 40%;
+		}
+
+		&-container{
+			width: 95%;
+    		text-align: center;
+		}
+	}
+}

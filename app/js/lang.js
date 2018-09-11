@@ -5,8 +5,8 @@ var langObj = { // eslint-disable-line
 		subtitle:
 			'limite a una crema de prueba por cliente, solo quedan <img src="../img/contador.gif" alt="contador">',
 		logo: '../img/logo.png',
-		mujer: '../img/foto1.png',
-		crema: '../img/foto3.png',
+		heade_img1: '../img/foto1.png',
+		heade_img2: '../img/foto3.png',
 		info_1: 'Elimina las<span>agrruas</span>',
 		info_1span: '78<span>%</span>',
 		info_2: 'Nutricion<span>intensa</span>',
@@ -105,5 +105,12 @@ var langObj = { // eslint-disable-line
 		banner_title: 'Mas Joven <span>Sin Cirugia</span>',
 		banner_img1: './img/foto3.png',
 		banner_img2: './img/foto4.png',
+
+		// Confirm
+		confirm_img1: './img/foto5.png',
+		confirm_img2: './img/foto6.png',
+		confirm_title: '¡Tu muestra <span>gratis</span><br>ya esta en camino!',
+		confirm_subtitle: 'Para mas informacion email@omm.com',
+		btn_confirm: 'Salir',
 	}
 };
