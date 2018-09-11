@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
 	
 	@include media(990px){
+    	background-size: unset;
 		padding: 0;
 	}
 

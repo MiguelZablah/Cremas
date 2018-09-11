@@ -39,8 +39,16 @@
 	}
 
 	&__img{
-		&-1{
+		&-container{
 			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			justify-items: center;
+		}
+		
+		&-1{
     		width: 100%;
 		}
 		&-2{

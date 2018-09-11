@@ -9,9 +9,9 @@ var langObj = { // eslint-disable-line
 		crema: '../img/foto3.png',
 		info_1: 'Elimina las<span>agrruas</span>',
 		info_1span: '78<span>%</span>',
-		info_2: 'Elimina las<span>agrruas</span>',
+		info_2: 'Nutricion<span>intensa</span>',
 		info_2span: '98<span>%</span>',
-		info_3: 'Elimina las<span>agrruas</span>',
+		info_3: 'Mejora tu<span>elasticidad</span>',
 		info_3span: '85<span>%</span>',
 		'header_footer-before':
 			'Oferta valida solo en Mexico <img src="../img/flagMexico.png" alt="bander mexico">',
@@ -99,6 +99,11 @@ var langObj = { // eslint-disable-line
 				text:
 				'Utiliza una crema OMM para  proteger tu piel frente a los factores ambientales nocivos.<br/>Después de limpiar tu rostro, seca tu piel con una toalla dando suaves toquecitos sobre ella en lugar de frotarla con fuerza.<br/>Utiliza productos sin fragancias.'
 			}
-		}
+		},
+
+		// Banner
+		banner_title: 'Mas Joven <span>Sin Cirugia</span>',
+		banner_img1: './img/foto3.png',
+		banner_img2: './img/foto4.png',
 	}
 };

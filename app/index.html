@@ -135,7 +135,9 @@
 	<section class="container-fluid doctor">
 		<div class="row">
 			<div class="col-lg-6">
-				<img class="doctor__img-1 i18nImg" data-i18n="doctor" src="./img/doctor.png" alt="doctor">
+				<div class="doctor__img-container">
+					<img class="doctor__img-1 i18nImg" data-i18n="doctor" src="./img/doctor.png" alt="doctor">
+				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="doctor__section-container">
@@ -173,7 +175,28 @@
 						Mantén tu piel fresca con los cuidados de día y noche.
 						Una exfoliación suave, una o dos veces por semana para  eliminar las impureza
 					</p>
-					<button class="btn btn-secondary btn__cutoms i18nAtt" data-i18n="btn_text">Agiliza mi pedido</button>
+					<button class="btn btn-secondary btn__cutoms i18nAtt" data-i18n="btn_text" onclick="goForm()">Agiliza mi pedido</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid banner">
+		<div class="row banner__part1">
+			<div class="col-lg-6">
+				<div class="banner__part1-container">
+					<h1 class="banner__part1-title i18nAtt" data-i18n="banner_title">
+						Mas Joven <span>Sin Cirugia</span>
+					</h1>
+					<div class="banner__img-container">
+						<img class="banner__part1-img i18nImg" data-i18n="banner_img1" src="./img/foto3.png" alt="crema">
+					</div>
+					<button class="btn btn-secondary btn__cutoms banner__btn i18nAtt" data-i18n="btn_text" onclick="goForm()">Agiliza mi pedido</button>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="banner__part2-container">
+					<img class="banner__part2-img i18nImg" data-i18n="banner_img2" src="./img/foto4.png" alt="girl">
 				</div>
 			</div>
 		</div>
@@ -208,6 +231,11 @@
 				document.getElementById("triviaTitle").innerHTML = resObj.Other.titulo;
 				document.getElementById("triviaText").innerHTML = resObj.Other.text;
 			}
+		}
+
+		function goForm() {
+			document.getElementById('name').focus();
+			document.getElementById('name').select();
 		}
 	</script>
 </body>

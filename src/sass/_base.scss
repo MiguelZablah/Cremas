@@ -19,9 +19,11 @@ body{
 	font-size: 2rem;
 	font-weight: 500;
 	overflow-x: hidden;
-	background-image: url(../img/bg.jpg);
-    background-size: cover;
-    background-repeat: repeat-y;
+	background: rgb(191,228,254);
+	background: linear-gradient(90deg, rgba(191,228,254,1) 0%, rgba(255,255,255,0.8855917366946778) 47%, rgba(191,228,254,1) 100%);
+	// background-image: url(../img/bg.jpg);
+    // background-size: cover;
+    // background-repeat: repeat-y;
 }
 *,
 *:before,
