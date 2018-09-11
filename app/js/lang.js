@@ -14,8 +14,8 @@ var langObj = { // eslint-disable-line
 		info_3: 'Mejora tu<span>elasticidad</span>',
 		info_3span: '85<span>%</span>',
 		'header_footer-before':
-			'Oferta valida solo en Mexico <img src="../img/flagMexico.png" alt="bander mexico">',
-		header_footer: 'Obtén tu muestra GRATIS aquí',
+			'Oferta válida solo en Mexico <img src="../img/flagMexico.png" alt="bander mexico">',
+		header_footer: 'Obtén tu muestra &nbsp&nbsp<span class="animated pulse">GRATIS</span>&nbsp&nbsp aquí',
 		'header_form-title': 'Dirección de envío',
 		'header_footer-subtext':
 			'Al darle clic a Continuar aceptas nuestros Terminos y Condiciones',
