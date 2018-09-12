@@ -10,10 +10,6 @@
 			@include media(990px){
 				display: contents;
 			}
-			
-			// @include media(1165px){
-			// 	height: 20vh;
-			// }
 		}
 		&-2{
 			height: 75vh;
@@ -38,6 +34,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			@include media(460px){
+				width: 100%;
+			}
 		}
 
 		&-title{
@@ -47,11 +47,19 @@
 			line-height: .79;
 			color: $primary;
 
+			@include media(460px){
+				font-size: 2.9rem;
+			}
+
 			& > span{
 				font-size: 8.2rem;
 				display: block;
 				font-weight: 600;
 				color: $purpel;
+			
+				@include media(460px){
+					font-size: 6.2rem;
+				}
 			}
 		}
 		
@@ -80,6 +88,10 @@
 			justify-content: center;
 			align-items: flex-end;
 			margin-bottom: 0;
+
+			@include media(460px){
+				font-size: .67rem;
+			}
 
 			& > img {
 				margin-left: 10px;
@@ -330,7 +342,7 @@
 			top: 0;
 
 			@include media(650px){
-				top: 166px;
+				top: 11rem;
 			}
 		}
 
@@ -344,15 +356,9 @@
 			bottom: 0;
 			z-index: 1;
 
-			// @include media(985px){
-			// 	width: 45rem;
-			// }
-
-			// @include media(450px){
-			// 	width: 50rem;
-			// }
-
-
+			@include media(460px){
+				width: 18rem;
+			}
 		}
 
 		&-2{
@@ -366,13 +372,11 @@
 				right: 5%;
 			}
 
-			// @include media(985px){
-			// 	width: 35rem;
-			// }
-
-			// @include mediaM(1432px){
-			// 	width: 35rem;
-			// }
+			@include media(460px){
+				right: 1%;
+				bottom: 0.5rem;
+				width: 16rem;
+			}
 			
 		}
 	}
