@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 	<title>Cremas</title>
 	<!-- Note: Import CSS -->
 	<link rel="stylesheet" href="./css/fonts.css">
@@ -68,6 +69,7 @@
 							</span>
 						</div>
 					</div>
+					<button class="btn btn-secondary header__mobile-btn btn__custom d-lg-none i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">Muestra Gratis</button>	
 					<div class="header__footer">
 						<div class="header__footer-oferta--container">
 							<div class="header__footer-oferta--text i18nAtt" data-i18n="header_footer-before">
@@ -76,7 +78,7 @@
 							</div>
 						</div>
 						<div class="header__footer-container">
-							<div class="header__footer-text i18nAtt" data-i18n="header_footer">
+							<div class="header__footer-text i18nAtt" onclick="goForm()" data-i18n="header_footer">
 								¡Solo pagas envio!
 								<span>¡No dejes pasar la oferta!</span>
 							</div>
@@ -134,13 +136,8 @@
 	</header>
 
 	<section class="container-fluid doctor">
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="doctor__img-container">
-					<img class="doctor__img-1 i18nImg" data-i18n="doctor" src="./img/doctor.png" alt="doctor">
-				</div>
-			</div>
-			<div class="col-lg-6">
+		<div class="row">	
+			<div class="col-lg-12 doctor__row">
 				<div class="doctor__section-container">
 					<h2 class="doctor__section-title i18nAtt" data-i18n="doctor_title">
 						Tratamiento Antiedad:
@@ -160,7 +157,15 @@
 
 	<section class="container-fluid questions">
 		<div class="row questions__row">
-			<div class="questions__container">
+			<div id="doctor_container" class="col-lg-6">
+				<div class="questions__doctor-container">
+					<img class="questions__doctor-img i18nImg" data-i18n="doctor" src="./img/doctor.png" alt="doctor">
+				</div>
+				<div class="questions__btn-container mobile-yes">
+					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_start" onclick="showTrivia()">Descúbrelo aquí</button>
+				</div>
+			</div>
+			<div class="col-lg-6 questions__container mobile-no">
 				<div id="triviaTitle" class="questions__title i18nAtt" data-i18n="trivia_title">
 					Como cuidar tu piel
 				</div>
@@ -190,7 +195,7 @@
 					<div class="banner__img-container">
 						<img class="banner__part1-img i18nImg" data-i18n="banner_img1" src="./img/foto3.png" alt="crema">
 					</div>
-					<button class="btn btn-secondary btn__custom banner__btn i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">Agiliza mi pedido</button>
+					<button class="btn btn-secondary btn__custom banner__btn i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">Muestra Gratis</button>
 				</div>
 			</div>
 			<div class="col-lg-6 d-none d-lg-block">

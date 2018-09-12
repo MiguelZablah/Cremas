@@ -26,6 +26,12 @@ function calcTrivia() { // eslint-disable-line
 	}
 }
 
+function showTrivia() { // eslint-disable-line
+	document.getElementById('doctor_container').style.display = 'none';
+	document.getElementsByClassName('mobile-yes')[0].style.display = 'none';
+	document.getElementsByClassName('mobile-no')[0].style.display = 'block';
+}
+
 function goForm() { // eslint-disable-line
 	document.getElementById('name').focus();
 	document.getElementById('name').select();
@@ -45,4 +51,22 @@ function goPayment() { // eslint-disable-line
 
 function goConfirm() { // eslint-disable-line
 	window.location.href = 'confirm.html';
+}
+
+// Media Queries
+if (matchMedia) {
+	const mq = window.matchMedia('(max-width: 990px)');
+	mq.addListener(WidthChange);
+	WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq){
+	if(mq.matches){
+		document.getElementsByClassName('mobile-no')[0].style.display = 'none';
+		document.getElementsByClassName('mobile-yes')[0].style.display = 'block';
+	}else{
+		document.getElementsByClassName('mobile-yes')[0].style.display = 'none';
+		document.getElementsByClassName('mobile-no')[0].style.display = 'block';
+	}
 }

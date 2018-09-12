@@ -4,12 +4,21 @@
 	background-size: cover;
 	text-align: center;
 
+	&__row{
+		height: 100%;
+	}
+
 	&__section{
 		&-container{
 			height: 100%;
-			padding: 25px;
+			padding: 2rem;
+    		margin: 2rem;
 			background-color: $white;
 			box-shadow: $shadow-light;
+
+			@include media(460px){
+    			margin: unset;
+			}
 		}
 
 		&-title{
@@ -39,21 +48,8 @@
 	}
 
 	&__img{
-		&-container{
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			align-content: center;
-			justify-items: center;
-		}
-		
-		&-1{
-    		width: 100%;
-    		max-width: max-content;
-		}
 		&-2{
-			width: 70%;
+			width: 50%;
     		max-height: 100%;
 		}
 	}

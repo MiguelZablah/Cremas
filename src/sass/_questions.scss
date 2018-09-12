@@ -7,11 +7,39 @@
 		width: 95%;
 	}
 
+	&__btn{
+		&-container{
+			margin-top: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	&__doctor{
+		&-container{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			justify-items: center;
+
+			@include media(990px){
+				height: 90%;
+			}
+		}
+		
+		&-img{
+    		width: 100%;
+    		max-width: max-content;
+		}
+	}
+
 	&__container{
 		background-color: $white;
 		text-align: center;
 		box-shadow: $shadow-dark;
 		font-size: 1.2rem;
+		margin: 0 auto;
 	}
 
 	&__title{

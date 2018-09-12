@@ -65,6 +65,7 @@
 	font-size: 1.5rem;
     font-weight: 800;
     padding: .5rem;
+	text-align: start;
 	
 	&__container{
 		padding: .5rem;
@@ -99,13 +100,15 @@
 		cursor: pointer;
 		margin-right: 7px;
 		outline: none;
+
 		&-container{
 			display: flex;
 			flex-direction: column;
 			width: fit-content;
 			align-items: flex-start;
-			margin: 0 auto;
+			margin-left: 2rem;
 		}
+
 		&:checked::before{
 			position: absolute;
 			font: 10px/1 'Open Sans', sans-serif;
@@ -114,12 +117,15 @@
 			content: '\02143';
 			transform: rotate(45deg);
 		}
+		
 		&:hover{
 			background-color: #2c2d32;
 		}
+
 		&:checked{
 			background-color: #52535a;
 		}
+
 		&:focus{
 			outline: none;
 		}

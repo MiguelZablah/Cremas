@@ -33,9 +33,9 @@ gulp.task('js', () => {
 		.src(jsSrc)
 		.pipe(concat('main.js'))
 		.pipe(stripJsComments())
-		.pipe(babel({
-			presets: ['env']
-		}))
+		// .pipe(babel({
+		// 	presets: ['env']
+		// }))
 		.pipe(minify())
 		.pipe(gulp.dest(jsDir))
 		.pipe(browserSync.stream());

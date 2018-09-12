@@ -18,7 +18,7 @@ var langObj = { // eslint-disable-line
 		header_footer: 'Obtén tu muestra &nbsp<span class="animated pulse">GRATIS</span>&nbsp aquí',
 		'header_form-title': 'Dirección de envío',
 		'header_footer-subtext':
-			'Al darle clic a Continuar aceptas nuestros Terminos y Condiciones',
+			'Al darle clic a muestra gratis aceptas nuestros Terminos y Condiciones',
 		btn_text: '¡MUESTRA GRATIS!',
 
 		// Doctor
@@ -32,6 +32,7 @@ var langObj = { // eslint-disable-line
 		// Trivia
 		trivia_title: 'Test: Como cuidar tu piel',
 		resImg: './img/foto2.png',
+		btn_start: 'Descúbrelo aquí',
 		triviaObj: [
 			{
 				question: '¿Que tipo de piel tienes?',
