@@ -1,12 +1,5 @@
 .banner{
 	height: 100%;
-	background-image: url(../img/bg1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-	&__btn{
-		width: 40%;
-	}
 	
 	&__part1{
 		height: 100%;
@@ -22,7 +15,7 @@
 
 		&-title{
 			display: block;
-			font-size: 4rem;
+			font-size: 3.5rem;
 			color: $purpel;
 			text-transform: uppercase;
 			font-weight: bold;
@@ -31,7 +24,7 @@
 
 			& > span {
 				display: block;
-				font-size: 6.5rem;
+				font-size: 4rem;
 				color: $primary-light;
 			}
 		}
@@ -49,6 +42,10 @@
 			align-items: flex-end;
 			align-content: center;
 			justify-items: center;
+
+			@include media(990px){
+				margin-top: 10px;
+			}
 		}
 
 		&-img{

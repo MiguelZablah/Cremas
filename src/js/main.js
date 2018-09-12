@@ -35,6 +35,10 @@ function goHome() { // eslint-disable-line
 	window.location.href = '/';
 }
 
+function goGoogle() { // eslint-disable-line
+	window.location.href = 'http://google.com';
+}
+
 function goPayment() { // eslint-disable-line
 	window.location.href = 'payment.html';
 }

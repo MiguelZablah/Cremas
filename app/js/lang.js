@@ -4,17 +4,17 @@ var langObj = { // eslint-disable-line
 		header_title: 'Mejor que el<span>botox</span>',
 		subtitle:
 			'Límite a una crema de prueba por cliente, Ya enviamos: <img src="../img/contador.gif" alt="contador">',
-		logo: '../img/logo.png',
+		logo: '../img/logo2.png',
 		heade_img1: '../img/foto1.png',
 		heade_img2: '../img/foto3.png',
-		info_1: 'Elimina las<span>agrruas</span>',
+		info_1: 'Elimina las<span>arrugas</span>',
 		info_1span: '78<span>%</span>',
 		info_2: 'Nutricion<span>intensa</span>',
 		info_2span: '98<span>%</span>',
 		info_3: 'Mejora tu<span>elasticidad</span>',
 		info_3span: '85<span>%</span>',
 		'header_footer-before':
-			'Oferta válida solo en Mexico <img src="../img/flagMexico.png" alt="bander mexico">',
+			'Oferta válida solo en México <img src="../img/flagMexico.png" alt="bander mexico">',
 		header_footer: 'Obtén tu muestra &nbsp<span class="animated pulse">GRATIS</span>&nbsp aquí',
 		'header_form-title': 'Dirección de envío',
 		'header_footer-subtext':
@@ -25,7 +25,7 @@ var langObj = { // eslint-disable-line
 		doctor: '../img/doctor.png',
 		doctor1: '../img/doctor1.png',
 		doctor_title: 'Tratamiento Antiedad:',
-		doctor_subtitle: 'Multiples <span>Beneficios</span>',
+		doctor_subtitle: 'Múltiples <span>Beneficios</span>',
 		doctor_text:
 			'Tenemos como objetivo brindar a todas las mujeres un producto de calidad. 100% libre de fragancia y parabenos. Totalmente seguro para pieles sensibles. Un producto que tiene como resultado mantener una piel saludable, hermosa y súper hidratada.<br/><br/>Nuestro tratamiendo corrige los 5 signos más visibles del envejecimiento. Ayuda a mejorar la firmeza, redefine el contorno del rostro, mejora la elasticidad, restaura la apariencia jóven y minimiza las arrugas. Los poros se reducen y la textura de la piel se suaviza.<br/><br/>La fórmula contiene el balance perfecto de vitaminas e ingredientes especializados, que dara como resultado la mejora de salud y belleza para todos los tipos de piel.<br/>',
 

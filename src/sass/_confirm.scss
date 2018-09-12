@@ -1,9 +1,6 @@
 .confirm{
 	height: 100vh;
 	overflow: hidden;
-	background-image: url(../img/bg1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 	
 	@include media(990px){
 		overflow: auto;
@@ -11,7 +8,7 @@
 
 	&__container{
 		&-1{
-			height: 50vh;
+			height: 53vh;
 			display: flex;
 			justify-content: center;
 			align-content: flex-end;
@@ -33,7 +30,7 @@
 		color: $primary-light;
 		text-align: center;
 		text-transform: uppercase;
-		font-size: 6rem;
+		font-size: 3.5rem;
 
 		& > span {
 			color: $purpel;
@@ -41,13 +38,14 @@
 	}
 
 	&__subtext{
-		font-size: 1rem;
-	    padding-top: 10px;
+		font-size: .6rem;
+		padding-top: 1rem;
+		margin-bottom: 0;
 	}
 
 	&__img{
 		&-1{
-			width: 94%;
+			width: 82%;
 			max-width: 600px;
 			position: absolute;
 			bottom: 0;
@@ -64,7 +62,7 @@
 		&-2{
 			&--container{
 				text-align: end;
-				padding-left: 10px;
+				padding-left: 1rem;
 			
 				@include media(990px){
 					display: flex;
@@ -85,7 +83,7 @@
 
 	&__btn{
 		width: 25%;
-		margin-top: 50px;
+		margin-top: 2rem;
 
 		@include media(600px){
 			width: 40%;

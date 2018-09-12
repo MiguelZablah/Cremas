@@ -34,6 +34,10 @@ function goHome() {
   window.location.href = '/';
 }
 
+function goGoogle() {
+  window.location.href = 'http://google.com';
+}
+
 function goPayment() {
   window.location.href = 'payment.html';
 }

@@ -10,7 +10,6 @@
 	
 	// Questions Contanier
 	&_quiz{
-		padding-top: 15px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -63,14 +62,13 @@
 }
 // Trivia Questions
 .question{
-	font-size: 2rem;
-	font-weight: 800;
-	padding: 10px;
+	font-size: 1.5rem;
+    font-weight: 800;
+    padding: .5rem;
+	
 	&__container{
-		margin-bottom: 15px;
-		padding: 15px;
-		width: 100%;
-		max-width: 500px;
+		padding: .5rem;
+    	width: 100%;
 	}
 	&__label {
 		font-size: 1.4rem;

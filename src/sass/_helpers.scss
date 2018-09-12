@@ -3,15 +3,13 @@
 }
 
 .btn__custom{
-	padding: 11px;
+    padding: 10px;
     text-align: center;
     color: #fff;
-    font-size: 2rem;
-    font-family: Gotham_light;
-    width: 50%;
-    border: 1px solid #fff;
+    font-size: 1.4rem;
+    border: 2px solid #fff;
     border-radius: 6px;
-    box-shadow: -1px 3px 10px #2f2e2e;
+    box-shadow: $shadow-dark;
 }
 
 .form-control:focus{
