@@ -37,6 +37,11 @@
 			@include media(460px){
 				width: 100%;
 			}
+
+			@include land-mobile{
+				width: unset;
+				margin-top: 0;
+			}
 		}
 
 		&-title{
@@ -50,6 +55,10 @@
 				font-size: 2.9rem;
 			}
 
+			@include land-mobile{
+				font-size: 2.5rem;
+			}
+
 			& > span{
 				font-size: 8.2rem;
 				display: block;
@@ -58,6 +67,10 @@
 			
 				@include media(460px){
 					font-size: 6.2rem;
+				}
+
+				@include land-mobile{
+					font-size: 5.3rem;
 				}
 			}
 		}
@@ -92,11 +105,19 @@
 				font-size: .67rem;
 			}
 
+			@include land-mobile{
+				font-size: .6rem;
+			}
+
 			& > img {
 				margin-left: 10px;
 
 				@include media(650px){
 					margin-left: unset;
+				}
+
+				@include land-mobile{
+					height: 15px;
 				}
 			}
 		}
@@ -123,6 +144,7 @@
 
 	&__info{
 		margin-top: -10%;
+
 		&-container{
 			display: flex;
 			justify-content: flex-end;
@@ -155,6 +177,10 @@
 				width: 96%;
 			}
 
+			@include land-mobile{
+				width: 60%;
+			}
+
 			&.light{
 				background-color: $primary-light;
 			}
@@ -172,6 +198,16 @@
 			
 			@include media(375px){
 				top: -185%;
+			}
+
+			@include land-mobile{
+				top: -178%;
+				width: 85%;
+			}
+			
+			@include land-iphone5{
+				top: -155%;
+				width: 85%;
 			}
 		}
 
@@ -191,6 +227,11 @@
 			@include media(375px){
 				font-size: 1rem;
 			}
+
+			@include land-mobile{
+				margin-right: .5rem;
+				font-size: 1rem;
+			}
 			
 			& > span{
 				display: block;
@@ -200,6 +241,10 @@
 			
 				@include media(375px){
 					font-size: 0.8rem;
+				}
+
+				@include land-mobile{
+					font-size: .9rem;
 				}
 			}
 		}
@@ -219,6 +264,10 @@
 			@include media(375px){
 				font-size: 1.5rem;
 			}
+
+			@include land-mobile{
+				font-size: 1.2rem;
+			}
 			
 			& > span {
 				font-size: 1.2rem;
@@ -227,6 +276,10 @@
 			
 				@include media(375px){
 					font-size: 0.8rem;
+				}
+
+				@include land-mobile{
+					font-size: .9rem;
 				}
 			}
 		}
@@ -379,6 +432,16 @@
 			font-size: .8rem;
     		right: 3%;
 		}
+
+		@include land-mobile{
+			right: 10%;
+			top: -80%;
+		}
+
+		@include land-iphone5{
+			right: 4%;
+    		top: -73%;
+		}
 	}
 
 	&__img{
@@ -397,6 +460,13 @@
 
 			@include media(650px){
 				top: 11rem;
+			}
+
+			@include land-mobile{
+				top: 0rem;
+				right: 0rem;
+				width: 100px;
+				height: 100px;
 			}
 		}
 
@@ -417,6 +487,11 @@
 			@include land-mobile{
 				width: 19rem;
 			}
+
+			@include land-iphone5{
+				width: 15rem;	
+				bottom: 4rem;
+			}
 		}
 
 		&-2{
@@ -434,6 +509,17 @@
 				right: 1%;
 				bottom: 0.5rem;
 				width: 16rem;
+			}
+
+			@include land-mobile{
+				width: 14rem;
+				left: 16%;
+				bottom: 2.5rem;
+			}
+
+			@include land-iphone5{
+				width: 11rem;
+				bottom: 3.5rem;
 			}
 			
 		}

@@ -25,8 +25,8 @@
     @content;
   }
 }
-@mixin land-tablet{
-  @media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+@mixin land-iphone5{
+  @media screen and (max-width:568px) and (max-height:320px) and (orientation:landscape) {
     @content;
   }
 }
