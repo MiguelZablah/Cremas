@@ -16,6 +16,11 @@
 
 			@include media(990px){
 				display: inline;
+				height: 70vh;
+			}
+
+			@include land-mobile{
+				height: 75vh;
 			}
 		}
 	}
@@ -66,7 +71,7 @@
 				color: $purpel;
 			
 				@include media(460px){
-					font-size: 6.2rem;
+					font-size: 6.1rem;
 				}
 
 				@include land-mobile{
@@ -356,12 +361,13 @@
 			font-size: 1rem;
 			color: $white;
 			line-height: 1.2;
-			text-align: center;
-			margin-left: 40%;
+			text-align: end;
+    		margin-right: 1rem;
 			padding: 1.15rem 0;
 
 			@include media(990px){
-				margin-left: unset;
+				margin-right: unset;
+    			text-align: center;
 			}
 		
 			& > span{
@@ -435,7 +441,7 @@
 
 		@include land-mobile{
 			right: 10%;
-			top: -80%;
+			top: -75%;
 		}
 
 		@include land-iphone5{
@@ -481,7 +487,11 @@
 			z-index: 1;
 
 			@include media(460px){
-				width: 18rem;
+				width: 21rem;
+			}
+			
+			@include media(320px){
+				width: 19rem;
 			}
 
 			@include land-mobile{

@@ -15,7 +15,7 @@ var langObj = { // eslint-disable-line
 		info_3span: '85<span>%</span>',
 		'header_footer-before':
 			'Oferta válida solo en México <img src="../img/flagMexico.png" alt="bander mexico">',
-		header_footer: 'Obtén tu muestra &nbsp<span class="animated pulse">GRATIS</span>&nbsp aquí',
+		header_footer: 'Oferta limitada',
 		'header_form-title': 'Dirección de envío',
 		'header_footer-subtext':
 			'Al darle clic a muestra gratis aceptas nuestros Terminos y Condiciones',

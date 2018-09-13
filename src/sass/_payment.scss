@@ -287,9 +287,8 @@
     	width: 100%;
 		
 		&-text{
-			padding-right: 3.4rem;
-    		text-align: end;
-			text-transform: uppercase;
+			padding-right: 3rem;
+    		text-transform: uppercase;
 
 			@include media(990px){
 				padding-right: 0;
