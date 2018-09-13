@@ -16,6 +16,9 @@
 
 			@include media(990px){
 				display: inline;
+			}
+			
+			@include media(420px){
 				height: 70vh;
 			}
 
