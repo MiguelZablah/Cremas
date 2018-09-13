@@ -8,15 +8,14 @@
 			height: 25vh;
 
 			@include media(990px){
-				display: contents;
+				display: inline;
 			}
 		}
 		&-2{
 			height: 75vh;
 
 			@include media(990px){
-				display: contents;
-				height: 80vh;
+				display: inline;
 			}
 		}
 	}
@@ -357,6 +356,7 @@
 		&-input{
 			height: 45px;
 			box-shadow: $shadow-light;
+			font-size: 16px;
 		}
 
 		&-subtext{
@@ -368,7 +368,8 @@
 	&__mobile-btn{
 		position: absolute;
 		right: 5%;
-		top: -55%;
+		top: -65%;
+		z-index: 5;
 
 		@include media(582px){
 			font-size: 1rem;	

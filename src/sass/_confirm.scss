@@ -16,7 +16,7 @@
     		margin: 0 26%;
 
 			@include media(990px){
-				align-content: center;
+				// align-content: center;
 				width: 100%;
 				margin: 0 auto;
 			}
@@ -31,6 +31,14 @@
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 3.5rem;
+
+		@include media(420px){
+			font-size: 3rem;
+		}
+		
+		@include media(320px){
+			font-size: 2.5rem;
+		}
 
 		& > span {
 			color: $purpel;

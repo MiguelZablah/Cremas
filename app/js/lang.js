@@ -32,7 +32,7 @@ var langObj = { // eslint-disable-line
 		// Trivia
 		trivia_title: 'Test: Como cuidar tu piel',
 		resImg: './img/foto2.png',
-		btn_start: 'Descúbrelo aquí',
+		btn_start: 'Comenzar test',
 		triviaObj: [
 			{
 				question: '¿Que tipo de piel tienes?',

@@ -11,7 +11,13 @@
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<header class="container-fluid header">
+	<div class="landscape">
+		<div class="landscape-container">
+			<h1>Flip the phone please</h1>
+		</div>
+	</div>
+
+	<header class="container-fluid header landscape-no">
 		<div class="row header__sections-1">
 			<div class="col-md-12 header__head-container">
 				<img class="header__img-logo i18nImg" data-i18n="logo" src="../img/logo2.png" alt="logo">
@@ -135,7 +141,7 @@
 		</div>
 	</header>
 
-	<section class="container-fluid doctor">
+	<section class="container-fluid doctor landscape-no">
 		<div class="row">	
 			<div class="col-lg-12 doctor__row">
 				<div class="doctor__section-container">
@@ -155,7 +161,7 @@
 		</div>
 	</section>
 
-	<section class="container-fluid questions">
+	<section class="container-fluid questions landscape-no">
 		<div class="row questions__row">
 			<div id="doctor_container" class="col-lg-6">
 				<div class="questions__doctor-container">
@@ -163,6 +169,11 @@
 				</div>
 				<div class="questions__btn-container mobile-yes">
 					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_start" onclick="showTrivia()">Descúbrelo aquí</button>
+				</div>
+				<div class="questions__mobile-container d-lg-none">
+					<h3 class="questions__mobile-text">
+						Descubre tu tipo de piel
+					</h3>
 				</div>
 			</div>
 			<div class="col-lg-6 questions__container mobile-no">
@@ -185,7 +196,7 @@
 		</div>
 	</section>
 
-	<section class="container-fluid banner">
+	<section class="container-fluid banner landscape-no">
 		<div class="row banner__part1">
 			<div class="col-lg-6">
 				<div class="banner__part1-container">
@@ -216,6 +227,8 @@
 		proximus.init(langObj, 'es');
 		// START Trivia
 		trivia.init(proximus.getKeyValue(langObj, 'triviaObj'));
+		// Start Listener to screen size
+		runMediaOnly();
 	</script>
 </body>
 </html>

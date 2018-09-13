@@ -29,11 +29,17 @@ function showTrivia() {
 	document.getElementById('doctor_container').style.display = 'none';
 	document.getElementsByClassName('mobile-yes')[0].style.display = 'none';
 	document.getElementsByClassName('mobile-no')[0].style.display = 'block';
+	window.location.href = '#triviaTitle';
 }
 
 function goForm() { 
 	document.getElementById('name').focus();
 	document.getElementById('name').select();
+}
+
+function goTarjeta() { 
+	document.getElementById('card').focus();
+	document.getElementById('card').select();
 }
 
 function goHome() { 
@@ -52,10 +58,12 @@ function goConfirm() {
 	window.location.href = 'confirm.html';
 }
 
-if (matchMedia) {
-	const mq = window.matchMedia('(max-width: 990px)');
-	mq.addListener(WidthChange);
-	WidthChange(mq);
+function runMediaOnly() { 
+	if (matchMedia) {
+		const mq = window.matchMedia('(max-width: 990px)');
+		mq.addListener(WidthChange);
+		WidthChange(mq);
+	}
 }
 
 function WidthChange(mq){

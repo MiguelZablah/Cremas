@@ -30,11 +30,17 @@ function showTrivia() { // eslint-disable-line
 	document.getElementById('doctor_container').style.display = 'none';
 	document.getElementsByClassName('mobile-yes')[0].style.display = 'none';
 	document.getElementsByClassName('mobile-no')[0].style.display = 'block';
+	window.location.href = '#triviaTitle';
 }
 
 function goForm() { // eslint-disable-line
 	document.getElementById('name').focus();
 	document.getElementById('name').select();
+}
+
+function goTarjeta() { // eslint-disable-line
+	document.getElementById('card').focus();
+	document.getElementById('card').select();
 }
 
 function goHome() { // eslint-disable-line
@@ -54,10 +60,12 @@ function goConfirm() { // eslint-disable-line
 }
 
 // Media Queries
-if (matchMedia) {
-	const mq = window.matchMedia('(max-width: 990px)');
-	mq.addListener(WidthChange);
-	WidthChange(mq);
+function runMediaOnly() { // eslint-disable-line
+	if (matchMedia) {
+		const mq = window.matchMedia('(max-width: 990px)');
+		mq.addListener(WidthChange);
+		WidthChange(mq);
+	}
 }
 
 // media query change

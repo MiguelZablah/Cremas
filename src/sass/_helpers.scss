@@ -67,3 +67,27 @@
         display: block;
     }
 }
+
+// Landscape helper
+.landscape{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    // @include land-mobile{
+    //     display: flex;
+    // }
+
+    // &-no{
+    //     @include land-mobile{
+	// 	    display: none !important;
+	//     }
+    // }
+
+    // &-container{
+    //     position: fixed;
+    // }
+}

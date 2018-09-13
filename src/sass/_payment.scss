@@ -148,6 +148,7 @@
 			background-color: $grey-light;
     		border-radius: unset;
 			padding: 1.4rem .75rem;
+			font-size: 16px;
 
 			// @include media(764px){
 			// 	font-size: 1.4rem;
@@ -291,6 +292,7 @@
 			text-transform: uppercase;
 
 			@include media(990px){
+				padding-right: 0;
 				text-align: center;
 			}
 		}
