@@ -20,9 +20,17 @@
 				width: 100%;
 				margin: 0 auto;
 			}
+			
+			@include land-mobile{
+				height: unset;
+			}
 		}
 		&-2{
 			height: 50vh;
+
+			@include land-mobile{
+				height: unset;
+			}
 		}
 	}
 
@@ -37,6 +45,10 @@
 		}
 		
 		@include media(320px){
+			font-size: 2.5rem;
+		}
+
+		@include land-mobile{
 			font-size: 2.5rem;
 		}
 
@@ -66,6 +78,12 @@
 			@include media(760px){
 				display: none;
 			}
+			
+			&--container{
+				@include land-mobile{
+					display: none;
+				}
+			}
 		}
 		&-2{
 			&--container{
@@ -78,6 +96,11 @@
 					align-content: center;
 					align-items: flex-end;
 				}
+
+				@include land-mobile{
+					flex: 0 0 100%;
+    				max-width: 100%;
+				}
 			}
 			height: 100%;
 			
@@ -86,7 +109,17 @@
 				width: 100%;
     			max-width: fit-content;
 			}
+
+			@include land-mobile{
+				width: 30%;
+			}
+			&--resLand{
+				@include land-mobile{
+					width: 30%;
+				}
+			}
 		}
+
 	}
 
 	&__btn{
