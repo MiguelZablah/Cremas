@@ -330,5 +330,13 @@
 
 	&__img{
 		width: 100%;
+
+		@include media(766px){
+			width: 50%;
+		}
+
+		&-container{
+			text-align: center;
+		}
 	}
 }

@@ -30,7 +30,7 @@ var langObj = { // eslint-disable-line
 			'Tenemos como objetivo brindar a todas las mujeres un producto de calidad. 100% libre de fragancia y parabenos. Totalmente seguro para pieles sensibles. Un producto que tiene como resultado mantener una piel saludable, hermosa y súper hidratada.<br/><br/>Nuestro tratamiendo corrige los 5 signos más visibles del envejecimiento. Ayuda a mejorar la firmeza, redefine el contorno del rostro, mejora la elasticidad, restaura la apariencia jóven y minimiza las arrugas. Los poros se reducen y la textura de la piel se suaviza.<br/><br/>La fórmula contiene el balance perfecto de vitaminas e ingredientes especializados, que dara como resultado la mejora de salud y belleza para todos los tipos de piel.<br/>',
 
 		// Trivia
-		trivia_title: 'Test: Como cuidar tu piel',
+		trivia_title: 'Test: Tu tipo de piel',
 		resImg: './img/foto2.png',
 		btn_start: 'Comenzar test',
 		triviaObj: [
