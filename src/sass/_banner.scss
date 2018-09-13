@@ -1,5 +1,7 @@
 .banner{
-	height: 100%;
+	@include media(990px){
+		padding-bottom: 1rem;
+	}
 	
 	&__part1{
 		height: 100%;

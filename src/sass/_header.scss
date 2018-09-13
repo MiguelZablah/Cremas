@@ -413,6 +413,10 @@
 			@include media(460px){
 				width: 18rem;
 			}
+
+			@include land-mobile{
+				width: 19rem;
+			}
 		}
 
 		&-2{
