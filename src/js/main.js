@@ -24,6 +24,7 @@ function calcTrivia() { // eslint-disable-line
 		document.getElementById('triviaTitle').innerHTML = resObj.Other.titulo;
 		document.getElementById('triviaText').innerHTML = resObj.Other.text;
 	}
+	window.location.href = '#triviaTitle';
 }
 
 function showTrivia() { // eslint-disable-line
