@@ -1,0 +1,13 @@
+.hide_Mobile{
+    @include media(990px){
+        display: none;
+    }
+}
+
+.no_position_mobile{
+    @include media(990px){
+		position: unset;
+		padding: 0;
+    	min-height: 0;
+    }
+}
