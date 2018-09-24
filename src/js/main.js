@@ -60,6 +60,7 @@ function goConfirm() { // eslint-disable-line
 	window.location.href = 'confirm.html';
 }
 
+// Show all hiden divs on click
 function showMobile() { // eslint-disable-line
 	let elementsBlock = document.getElementsByClassName('hide_Mobile-block');
 	let elementsFlex = document.getElementsByClassName('hide_Mobile-flex');
@@ -92,4 +93,25 @@ function WidthChange(mq){
 		document.getElementsByClassName('mobile-yes')[0].style.display = 'none';
 		document.getElementsByClassName('mobile-no')[0].style.display = 'block';
 	}
+}
+
+// Call to endpoints
+function mobile_btn1() { // eslint-disable-line
+	let res = callEndpoint('POST', 'url', JSON.stringify({age: 23, height: 72, income: 2500}));
+	console.log(res);
+}
+
+function callEndpoint(method, url, params = null) {
+	let xhr = new XMLHttpRequest();
+	xhr.open(method, url);
+	xhr.setRequestHeader('Content-Type', 'application/json');
+
+	if(params != null)
+		xhr.send(params);
+	else
+		xhr.send();
+	
+	xhr.onreadystatechange = function(event) {
+		return event.target.response;
+	};
 }
