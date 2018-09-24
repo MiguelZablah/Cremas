@@ -1,6 +1,9 @@
 .hide_Mobile{
-    @include media(990px){
-        display: none;
+    &-block,
+    &-flex{
+        @include media(990px){
+            display: none;
+        }
     }
 }
 

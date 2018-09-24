@@ -59,6 +59,20 @@ function goConfirm() {
 	window.location.href = 'confirm.html';
 }
 
+function showMobile() { 
+	let elementsBlock = document.getElementsByClassName('hide_Mobile-block');
+	let elementsFlex = document.getElementsByClassName('hide_Mobile-flex');
+
+		for(let i = 0; i < elementsBlock.length; i++){
+		elementsBlock[i].style.display = 'block';
+	}
+	for(let i = 0; i < elementsFlex.length; i++){
+		elementsFlex[i].style.display = 'flex';
+	}
+
+	goForm();
+}
+
 function runMediaOnly() { 
 	if (matchMedia) {
 		const mq = window.matchMedia('(max-width: 990px)');

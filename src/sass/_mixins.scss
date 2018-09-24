@@ -19,6 +19,13 @@
   }
 }
 
+// Wodth and Height media query
+@mixin mediaWH($width, $height) {
+  @media only screen and (min-width: $width) and (min-height: $height){
+    @content;
+  }
+}
+
 // Landscape
 @mixin land-mobile{
   @media screen and (max-width:823px) and (max-height:420px) and (orientation:landscape) {

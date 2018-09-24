@@ -35,7 +35,7 @@
 				<img class="header__img-1 i18nImg" data-i18n="heade_img1" src="../img/foto1.png" alt="mujer">
 				<img class="header__img-2 i18nImg" data-i18n="heade_img2" src="../img/foto3.png" alt="crema">
 			</div>
-			<div class="col-lg-5 header__middle-container">
+			<div class="col-lg-5 header__middle-container no_position_mobile">
 				<div class="header__middle-box">
 					<div class="header__info-box">
 						<div class="header__info-container">
@@ -69,8 +69,8 @@
 							</span>
 						</div>
 					</div>
-					<button class="btn btn-secondary header__mobile-btn btn__custom d-lg-none i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">Muestra Gratis</button>	
-					<div class="header__footer">
+					<button class="btn btn-secondary header__mobile-btn btn__custom d-lg-none i18nAtt animated pulse" data-i18n="btn_text" onclick="showMobile()">Muestra Gratis</button>
+					<div class="header__footer hide_Mobile-block">
 						<div class="header__footer-oferta--container">
 							<div class="header__footer-oferta--text i18nAtt" data-i18n="header_footer-before">
 								Oferta valida solo en Mexico
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-5 header__form-section">
+			<div class="col-lg-5 header__form-section hide_Mobile-flex">
 				<div class="header__form-container">
 					<h3 class="header__form-title i18nAtt" data-i18n="header_form-title">
 						¿A donde te enviamos tu muestra gratis?
@@ -135,7 +135,7 @@
 		</div>
 	</header>
 
-	<section class="container-fluid doctor">
+	<section class="container-fluid doctor hide_Mobile-block">
 		<div class="row">	
 			<div class="col-lg-12 doctor__row">
 				<div class="doctor__section-container">
@@ -155,7 +155,7 @@
 		</div>
 	</section>
 
-	<section class="container-fluid questions">
+	<section class="container-fluid questions hide_Mobile-flex">
 		<div class="row questions__row">
 			<div id="doctor_container" class="col-lg-6">
 				<div class="questions__doctor-container">
@@ -190,7 +190,7 @@
 		</div>
 	</section>
 
-	<section class="container-fluid banner">
+	<section class="container-fluid banner hide_Mobile-block">
 		<div class="row banner__part1">
 			<div class="col-lg-6">
 				<div class="banner__part1-container">

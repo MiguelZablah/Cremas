@@ -8,10 +8,15 @@ html {
 	@include mediaH(700px){
 		font-size: 13px;
 	}
+	
+	@include media(420px){
+		font-size: 13px;
+	}
 
-	@include media(360px){
+	@include media(320px){
 		font-size: 12px;
 	}
+	
 }
 
 html,

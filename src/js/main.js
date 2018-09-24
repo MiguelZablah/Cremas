@@ -60,6 +60,20 @@ function goConfirm() { // eslint-disable-line
 	window.location.href = 'confirm.html';
 }
 
+function showMobile() { // eslint-disable-line
+	let elementsBlock = document.getElementsByClassName('hide_Mobile-block');
+	let elementsFlex = document.getElementsByClassName('hide_Mobile-flex');
+	
+	for(let i = 0; i < elementsBlock.length; i++){
+		elementsBlock[i].style.display = 'block';
+	}
+	for(let i = 0; i < elementsFlex.length; i++){
+		elementsFlex[i].style.display = 'flex';
+	}
+
+	goForm();
+}
+
 // Media Queries
 function runMediaOnly() { // eslint-disable-line
 	if (matchMedia) {
