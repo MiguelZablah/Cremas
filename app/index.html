@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 	<title>Cremas</title>
 	<!-- Note: Import CSS -->
 	<link rel="stylesheet" href="./css/fonts.css">
@@ -40,32 +38,26 @@
 					<div class="header__info-box">
 						<div class="header__info-container">
 							<p class="header__info-text i18nAtt" data-i18n="info_1">
-								Elimina las
-								<span>arrugas</span>
+								Elimina las<span>arrugas</span>
 							</p>
 							<span class="header__info-side i18nAtt" data-i18n="info_1span">
-								78
-								<span>%</span>
+								78<span>%</span>
 							</span>
 						</div>
 						<div class="header__info-container light">
 							<p class="header__info-text i18nAtt" data-i18n="info_2">
-								Elimina las
-								<span>agrruas</span>
+								Nutricion<span>intensa</span>
 							</p>
 							<span class="header__info-side i18nAtt" data-i18n="info_2span">
-								98
-								<span>%</span>
+								98<span>%</span>
 							</span>
 						</div>
 						<div class="header__info-container">
 							<p class="header__info-text i18nAtt" data-i18n="info_3">
-								Elimina las
-								<span>agrruas</span>
+								Mejora tu<span>elasticidad</span>
 							</p>
 							<span class="header__info-side i18nAtt" data-i18n="info_3span">
-								85
-								<span>%</span>
+								85<span>%</span>
 							</span>
 						</div>
 					</div>
@@ -73,14 +65,13 @@
 					<div class="header__footer hide_Mobile-block">
 						<div class="header__footer-oferta--container">
 							<div class="header__footer-oferta--text i18nAtt" data-i18n="header_footer-before">
-								Oferta valida solo en Mexico
-								<img src="../img/flagMexico.png" alt="flag">
+								Oferta válida solo en México 
+								<img src="../img/flagMexico.png" alt="bander mexico">
 							</div>
 						</div>
 						<div class="header__footer-container">
 							<div class="header__footer-text i18nAtt" onclick="goForm()" data-i18n="header_footer">
-								¡Solo pagas envio!
-								<span>¡No dejes pasar la oferta!</span>
+								Oferta limitada
 							</div>
 						</div>
 					</div>
@@ -89,48 +80,48 @@
 			<div class="col-lg-5 header__form-section hide_Mobile-flex">
 				<div class="header__form-container">
 					<h3 class="header__form-title i18nAtt" data-i18n="header_form-title">
-						¿A donde te enviamos tu muestra gratis?
+						Dirección de envío
 					</h3>
-					<form class="header__form">
+					<form id="form" class="header__form" action="javascript:goPayment()">
 						<div class="form-group">
-							<input type="text" class="form-control header__form-input" id="name" placeholder="Nombre">
+							<input type="text" class="form-control header__form-input" id="name" placeholder="Nombre" required>
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control header__form-input" id="email" placeholder="Correo">
+							<input type="email" class="form-control header__form-input" id="email" placeholder="Correo" required>
 						</div>
 						<div class="form-group pt-4">
-							<input type="email" class="form-control header__form-input" id="calle" placeholder="Calle">
+							<input type="text" class="form-control header__form-input" id="calle" placeholder="Calle" required>
 						</div>
 						<div class="row">
 							<div class="col">
 								<div class="form-group">
-									<input type="text" class="form-control header__form-input" id="calle" placeholder="Municipio">
+									<input type="text" class="form-control header__form-input" id="calle" placeholder="Municipio" required>
 								</div>
 							</div>
 							<div class="col">
 								<div class="form-group">
-									<input type="text" class="form-control header__form-input" id="estado" placeholder="Estado">
+									<input type="text" class="form-control header__form-input" id="estado" placeholder="Estado" required>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col">
 								<div class="form-group">
-									<input type="text" class="form-control header__form-input" id="cp" placeholder="CP">
+									<input type="text" class="form-control header__form-input" id="cp" placeholder="CP" required>
 								</div>
 							</div>
 							<div class="col">
 								<div class="form-group">
-									<input type="text" class="form-control header__form-input" id="pais" placeholder="Mexico">
+									<input type="text" class="form-control header__form-input" id="pais" placeholder="Mexico" required>
 								</div>
 							</div>
 						</div>
 						<p class="header__form-subtext i18nAtt" data-i18n="header_footer-subtext">
-							Al darle clic a Continuar aceptas nuestros Terminos y Condiciones
+							Al darle clic a muestra gratis aceptas nuestros Terminos y Condiciones
 						</p>
 					</form>
 				</div>
-				<button type="submit" class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_text" onclick="goPayment()">Agiliza mi pedido</button>
+				<input type="submit" form="form" class="btn btn-secondary btn__custom animated pulse" value="¡MUESTRA GRATIS!"/>
 			</div>
 		</div>
 	</header>
@@ -143,13 +134,14 @@
 						Tratamiento Antiedad:
 					</h2>
 					<h3 class="doctor__section-subtitle i18nAtt" data-i18n="doctor_subtitle">
-						Multiples
-						<span>Beneficios</span>
+						Múltiples <span>Beneficios</span>
 					</h3>
 					<p class="doctor__section-text i18nAtt" data-i18n="doctor_text">
-						Text
+						Tenemos como objetivo brindar a todas las mujeres un producto de calidad. 100% libre de fragancia y parabenos. Totalmente seguro para pieles sensibles. Un producto que tiene como resultado mantener una piel saludable, hermosa y súper hidratada.<br/><br/>
+						Nuestro tratamiendo corrige los 5 signos más visibles del envejecimiento. Ayuda a mejorar la firmeza, redefine el contorno del rostro, mejora la elasticidad, restaura la apariencia jóven y minimiza las arrugas. Los poros se reducen y la textura de la piel se suaviza.<br/><br/>
+						La fórmula contiene el balance perfecto de vitaminas e ingredientes especializados, que dara como resultado la mejora de salud y belleza para todos los tipos de piel.<br/>
 					</p>
-					<img class="doctor__img-2 i18nImg" data-i18n="doctor1" src="./img/doctor1.png" alt="Antes y Despues">
+					<img class="doctor__img-2 i18nImg" data-i18n="antesDespues" src="./img/antesDespues.png" alt="Antes y Despues">
 				</div>
 			</div>
 		</div>
@@ -162,21 +154,21 @@
 					<img class="questions__doctor-img i18nImg" data-i18n="doctor" src="./img/doctor.png" alt="doctor">
 				</div>
 				<div class="questions__btn-container mobile-yes">
-					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_start" onclick="showTrivia()">Descúbrelo aquí</button>
+					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_start" onclick="showTrivia()">Comenzar test</button>
 				</div>
 				<div class="questions__mobile-container d-lg-none">
-					<h3 class="questions__mobile-text">
+					<h3 class="questions__mobile-text i18nAtt" data-i18n="trivia_mobile-title">
 						Descubre tu tipo de piel
 					</h3>
 				</div>
 			</div>
 			<div class="col-lg-6 questions__container mobile-no">
 				<div id="triviaTitle" class="questions__title i18nAtt" data-i18n="trivia_title">
-					Como cuidar tu piel
+					Test: Tu tipo de piel
 				</div>
 				<div id="trivia" class="trivia__container">
 					<div id="trivia_quiz"></div>
-					<button class="btn btn-secondary btn__custom" onclick="calcTrivia()">Terminar</button>
+					<button class="btn btn-secondary btn__custom i18nAtt" data-i18n="btn_end" onclick="calcTrivia()">Terminar</button>
 					<div id="trivia_results"></div>
 				</div>
 				<div id="questions__results" class="questions__results">
@@ -184,7 +176,7 @@
 					<p id="triviaText" class="questions__results-text">
 						bullets
 					</p>
-					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">Agiliza mi pedido</button>
+					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">¡MUESTRA GRATIS!</button>
 				</div>
 			</div>
 		</div>
@@ -195,12 +187,12 @@
 			<div class="col-lg-6">
 				<div class="banner__part1-container">
 					<h1 class="banner__part1-title i18nAtt" data-i18n="banner_title">
-						Mas Joven <span>Sin Cirugia</span>
+						Más Joven <span>Sin Cirugía</span>
 					</h1>
 					<div class="banner__img-container">
 						<img class="banner__part1-img i18nImg" data-i18n="banner_img1" src="./img/foto3.png" alt="crema">
 					</div>
-					<button class="btn btn-secondary btn__custom banner__btn i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">Muestra Gratis</button>
+					<button class="btn btn-secondary btn__custom banner__btn i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">¡MUESTRA GRATIS!</button>
 				</div>
 			</div>
 			<div class="col-lg-6 d-none d-lg-block">

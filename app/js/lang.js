@@ -23,7 +23,7 @@ var langObj = { // eslint-disable-line
 
 		// Doctor
 		doctor: '../img/doctor.png',
-		doctor1: '../img/doctor1.png',
+		antesDespues: '../img/antesDespues.png',
 		doctor_title: 'Tratamiento Antiedad:',
 		doctor_subtitle: 'Múltiples <span>Beneficios</span>',
 		doctor_text:
@@ -31,8 +31,10 @@ var langObj = { // eslint-disable-line
 
 		// Trivia
 		trivia_title: 'Test: Tu tipo de piel',
+		'trivia_mobile-title': 'Descubre tu tipo de piel',
 		resImg: './img/foto2.png',
 		btn_start: 'Comenzar test',
+		btn_end: 'Terminar',
 		triviaObj: [
 			{
 				question: '¿Que tipo de piel tienes?',
