@@ -10,6 +10,9 @@
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
 // @import "../../node_modules/bootstrap/scss/bootstrap";
 @import 'helpers';
@@ -21,4 +24,5 @@
 @import 'banner';
 @import 'payment';
 @import 'confirm';
+@import 'footer';
 @import 'mobileFix';

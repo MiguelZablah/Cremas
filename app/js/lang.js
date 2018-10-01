@@ -1,10 +1,10 @@
 var langObj = { // eslint-disable-line
 	es: {
 		// HEADER
-		header_title: 'Mejor que el<span>botox</span>',
+		header_title: 'Mejor que tu crerma<span>actual</span>',
 		subtitle:
 			'Límite a una crema de prueba por cliente, Ya enviamos: <img src="../img/contador.gif" alt="contador">',
-		logo: '../img/logo2.png',
+		logo: '../img/logo.png',
 		heade_img1: '../img/foto1.png',
 		heade_img2: '../img/foto3.png',
 		info_1: 'Elimina las<span>arrugas</span>',
@@ -108,6 +108,11 @@ var langObj = { // eslint-disable-line
 		banner_title: 'Más Joven <span>Sin Cirugía</span>',
 		banner_img1: './img/foto6.png',
 		banner_img2: './img/foto4.png',
+
+		// Footer
+		footer_logo: './img/logo.png',
+		footer_poli: 'Politicas de Privacidad',
+		footer_terms: 'Terminos y condiciones',
 
 		// Confirm
 		confirm_img1: './img/foto5.png',

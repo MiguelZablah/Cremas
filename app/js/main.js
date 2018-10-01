@@ -91,22 +91,31 @@ function WidthChange(mq){
 	}
 }
 
+
 function mobile_btn1() { 
-	let res = callEndpoint('POST', 'url', JSON.stringify({age: 23, height: 72, income: 2500}));
-	console.log(res);
+	callEndpoint('fb02','v_3_0', 'complete');
 }
 
-function callEndpoint(method, url, params = null) {
+function callEndpoint(cc, vv, step) {
 	let xhr = new XMLHttpRequest();
-	xhr.open(method, url);
+	xhr.open('POST', 'http://otpn.sopmoist4u.com/stats');
 	xhr.setRequestHeader('Content-Type', 'application/json');
-
-	if(params != null)
-		xhr.send(params);
-	else
-		xhr.send();
-
-		xhr.onreadystatechange = function(event) {
+	xhr.onreadystatechange = function(event) {
 		return event.target.response;
 	};
+	var data = JSON.stringify({'cc': cc, 'v': vv, 'step': step});
+	xhr.send(data);
+
+	}
+
+window.onload = function() {
+	var closeBtn = document.getElementsByClassName('close')[0];
+	if(closeBtn){
+		closeBtn.addEventListener('click', closeErrorMsg);
+	}
+};
+
+function closeErrorMsg() {
+	document.getElementById('errorExplanation').style.display = 'none';
 }
+

@@ -12,10 +12,12 @@
 	<header class="container-fluid header">
 		<div class="row header__sections-1">
 			<div class="col-md-12 header__head-container">
-				<!-- <img class="header__img-logo i18nImg" data-i18n="logo" src="../img/logo2.png" alt="logo"> -->
+				<div class="header__img-logo--container">
+					<img class="header__img-logo i18nImg" data-i18n="logo" src="../img/logo.png" alt="logo">
+				</div>
 				<div class="header__head-box">
 					<h1 class="header__head-title i18nAtt" data-i18n="header_title">
-						Mejor que el<span>botox</span>
+						Mejor que tu crerma<span>actual</span>
 					</h1>
 				</div>
 			</div>
@@ -40,25 +42,25 @@
 							<p class="header__info-text i18nAtt" data-i18n="info_1">
 								Elimina las<span>arrugas</span>
 							</p>
-							<span class="header__info-side i18nAtt" data-i18n="info_1span">
+							<!-- <span class="header__info-side i18nAtt" data-i18n="info_1span">
 								78<span>%</span>
-							</span>
+							</span> -->
 						</div>
 						<div class="header__info-container light">
 							<p class="header__info-text i18nAtt" data-i18n="info_2">
 								Nutricion<span>intensa</span>
 							</p>
-							<span class="header__info-side i18nAtt" data-i18n="info_2span">
+							<!-- <span class="header__info-side i18nAtt" data-i18n="info_2span">
 								98<span>%</span>
-							</span>
+							</span> -->
 						</div>
 						<div class="header__info-container">
 							<p class="header__info-text i18nAtt" data-i18n="info_3">
 								Mejora tu<span>elasticidad</span>
 							</p>
-							<span class="header__info-side i18nAtt" data-i18n="info_3span">
+							<!-- <span class="header__info-side i18nAtt" data-i18n="info_3span">
 								85<span>%</span>
-							</span>
+							</span> -->
 						</div>
 					</div>
 					<button class="btn btn-secondary header__mobile-btn btn__custom d-lg-none i18nAtt animated pulse" data-i18n="btn_text" onclick="showMobile()">Muestra Gratis</button>
@@ -202,6 +204,25 @@
 			</div>
 		</div>
 	</section>
+
+	<footer class="container-fluid footer hide_Mobile-block">
+		<div class="row">
+			<div class="col-2 footer__logo-container">
+				<img class="footer__logo i18nImg" data-i18n="footer_logo" src="./img/logo.png" alt="OMM anti-arrugas">
+			</div>
+			<div class="col footer__text-container">
+				<p class="footer__text">
+					<a class="i18nAtt" data-i18n="footer_terms" href="#">Terminos y condiciones</a>
+					<span class="footer__text-span">/</span>
+					<a  class="i18nAtt" data-i18n="footer_poli" href="#">Politicas de Privacidad</a>
+				</p>
+			</div>
+			<div class="col-2 footer__icon-container">
+				<a href="tel:01-800-872-9966" class="footer__icon footer__icon-whatsapp fa-flip-horizontal"></a>
+				<a href="https://www.facebook.com/ommjabonartesano/" class="footer__icon footer__icon-facebook"></a>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Note: Import JS -->
 	<script src="./js/proximus-min.js"></script>

@@ -1,0 +1,116 @@
+.footer{
+	background-color: $primary-light;
+
+	&__text{
+		color: $white-light;
+		font-size: .8rem;
+		margin-bottom: 0;
+
+		@include media(492px){
+			font-size: .7rem;
+		}
+		
+		@include media(320px){
+			font-size: .6rem;
+		}
+
+		& > a{
+			color: inherit;
+			font-size: inherit;
+			&:hover{
+				text-decoration: none;
+				color: $white;
+			}
+		}
+
+		&-span{
+			margin-left: 1rem;
+			margin-right: 1rem;
+			@include media(514px){
+				margin-left: .5rem;
+				margin-right: .5rem;
+			}
+			@include media(492px){
+				margin-left: .1rem;
+				margin-right: .1rem;
+			}
+		}
+
+		&-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include media(480px){
+				padding: 0 5px;
+			}
+		}
+	}
+	
+	
+	&__icon{
+		color: $white;
+		font-size: 1.5rem;
+
+		@include media(492px){
+			font-size: 1rem;
+		}
+
+		&:hover{
+			text-decoration: none;
+			color: $white;
+		}
+
+		&-container{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+
+			@include media(480px){
+				justify-content: space-around;
+				padding: 0;
+				padding-right: 5px;
+			}
+		}
+
+		&-whatsapp{
+			@extend %fa-icon;
+			@extend .fas;
+
+			&:before {
+				content: fa-content($fa-var-phone);
+			}
+		}
+		&-facebook{
+			@extend %fa-icon;
+			@extend .fab;
+
+			&:before {
+				content: fa-content($fa-var-facebook-f);
+			}
+		}
+	}
+
+	&__logo{
+		padding: 2px 0;
+		margin-left: .5rem;
+		max-width: 74px;
+
+		@include media(492px){
+			width: 4rem;
+		}
+
+		@include media(514px){
+			padding: 0;
+			margin-left: 0;
+		}
+
+		&-container{
+			@include media(480px){
+				padding: 0;
+				padding-left: 5px;
+			}
+		}
+	}
+
+}
