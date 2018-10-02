@@ -473,18 +473,22 @@
 
 			&--container{
 				position: absolute;
-				right: -1rem;
+				right: 0;
     			top: -1.6rem;
 				padding: 1.81rem 1.25rem;
-				border-radius: 100px;
+				border-bottom-left-radius: 70px;
+				border-bottom-right-radius: 59px;
+				border-top-left-radius: 70px;
 				background-color: $primary-light;
 			
 				@include media(650px){
+					border-radius: 100px;
 					top: 12rem;
 					right: 0;
 				}
 				
 				@include land-mobile{
+					border-radius: 100px;
 					top: -20px;
     				right: 0;
 				}

@@ -27,9 +27,10 @@ function calcTrivia() {
 }
 
 function showTrivia() { 
-	document.getElementById('doctor_container').style.display = 'none';
+	document.getElementById('questions_img_container').style.display = 'none';
 	document.getElementsByClassName('mobile-yes')[0].style.display = 'none';
 	document.getElementsByClassName('mobile-no')[0].style.display = 'block';
+	document.getElementsByClassName('questions__row')[0].style.width = '95%';
 	window.location.href = '#triviaTitle';
 }
 
