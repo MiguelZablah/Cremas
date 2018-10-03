@@ -5,6 +5,24 @@
 
 	&__row{
 		width: 100%;
+		background-image: url('https://cdn.sopmoist4u.com/landings/assets/V_10/img/fondoSide.jpg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+
+		@include mediaM(1348px){
+			background-position-x: 5rem;
+		}
+		
+		@include media(990px){
+			background-size: cover;
+			background-position: center;
+			min-height: 55rem;
+		}
+
+		@include media(544px){
+			background-position-y: -30px;
+		}
 	}
 
 	&__btn{
@@ -22,14 +40,18 @@
 			height: 100%;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
+			justify-content: center;
 			align-items: center;
 		}
 
-		&-col{
-			padding: 0;
-		}
+		&-1{
+			margin-top: 10rem;
 
+			@include media(990px){
+				margin-top: 1.5rem;
+			}
+		}
+		
 		&-1,
 		&-2,
 		&-3{
@@ -37,9 +59,19 @@
     		max-width: 412px;
 
 			@include media(990px){
+				width: 23rem;
+			}
+			
+			@include media(544px){
 				width: 70%;
 			}
 		}
+
+		&-2{
+			margin: 2rem 0;
+		}
+
+
 		&-4{
     		width: 100%;
     		max-width: 845px;

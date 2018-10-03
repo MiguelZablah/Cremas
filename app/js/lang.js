@@ -7,7 +7,7 @@ var langObj = { // eslint-disable-line
 		logo: '../img/logo.png',
 		heade_img1: '../img/foto1.png',
 		heade_img2: '../img/foto3.png',
-		info_1: 'Elimina las<span>arrugas</span>',
+		info_1: 'Ingredientes<span>naturales</span>',
 		info_1span: '78<span>%</span>',
 		info_2: 'Nutricion<span>intensa</span>',
 		info_2span: '98<span>%</span>',
@@ -22,7 +22,6 @@ var langObj = { // eslint-disable-line
 		btn_text: '¡MUESTRA GRATIS!',
 
 		// Doctor
-		doctor: '../img/doctor.png',
 		antesDespues: '../img/antesDespues.png',
 		doctor_title: 'Tratamiento Antiedad:',
 		doctor_subtitle: 'Múltiples <span>Beneficios</span>',
@@ -33,6 +32,10 @@ var langObj = { // eslint-disable-line
 		trivia_title: 'Test: Tu tipo de piel',
 		'trivia_mobile-title': 'Descubre tu tipo de piel',
 		resImg: './img/foto2.png',
+		questions__text1: './img/text1.png',
+		questions__text2: './img/text2.png',
+		questions__text3: './img/text3.png',
+		questions__foto7: './img/foto7.png',
 		btn_start: 'Comenzar test',
 		btn_end: 'Terminar',
 		triviaObj: [

@@ -40,7 +40,7 @@
 					<div class="header__info-box">
 						<div class="header__info-container">
 							<p class="header__info-text i18nAtt" data-i18n="info_1">
-								Elimina las<span>arrugas</span>
+								Ingredientes<span>naturales</span>
 							</p>
 							<!-- <span class="header__info-side i18nAtt" data-i18n="info_1span">
 								78<span>%</span>
@@ -63,7 +63,7 @@
 							</span> -->
 						</div>
 					</div>
-					<button class="btn btn-secondary header__mobile-btn btn__custom d-lg-none i18nAtt animated pulse" data-i18n="btn_text" onclick="showMobile()">Muestra Gratis</button>
+					<button id="btn_welcome" class="btn btn-secondary header__mobile-btn btn__custom d-lg-none i18nAtt animated pulse" data-i18n="btn_text">Muestra Gratis</button>
 					<div class="header__footer hide_Mobile-block">
 						<div class="header__footer-oferta--container">
 							<div class="header__footer-oferta--text i18nAtt" data-i18n="header_footer-before">
@@ -86,7 +86,7 @@
 					</h3>
 					<form id="form" class="header__form" action="javascript:goPayment()">
 						<div class="form-group">
-							<input type="text" class="form-control header__form-input" id="name" placeholder="Nombre" required>
+							<input type="text" class="form-control header__form-input" id="go_form_first" placeholder="Nombre" required>
 						</div>
 						<div class="form-group">
 							<input type="email" class="form-control header__form-input" id="email" placeholder="Correo" required>
@@ -153,10 +153,9 @@
 		<div class="row questions__row">
 			<div id="questions_img_container" class="col-lg-6 questions__img-col">
 				<div class="questions__img-container">
-					<img class="questions__img-1 i18nImg" data-i18n="text1" src="./img/text1.png" alt="Libre de quimicos">
-					<img class="questions__img-2 i18nImg" data-i18n="text2" src="./img/text2.png" alt="Libre de parabenos">
-					<img class="questions__img-3 i18nImg" data-i18n="text3" src="./img/text3.png" alt="contra las pruebas en animales">
-					<img class="questions__img-4 i18nImg" data-i18n="foto7" src="./img/foto7.png" alt="crema">
+					<img class="questions__img-1 i18nImg" data-i18n="questions__text1" src="./img/text1.png" alt="Libre de quimicos">
+					<img class="questions__img-2 i18nImg" data-i18n="questions__text2" src="./img/text2.png" alt="Libre de parabenos">
+					<img class="questions__img-3 i18nImg" data-i18n="questions__text3" src="./img/text3.png" alt="contra las pruebas en animales">
 				</div>
 				<div class="questions__btn-container mobile-yes">
 					<button class="btn btn-secondary btn__custom i18nAtt animated pulse" data-i18n="btn_start" onclick="showTrivia()">Comenzar test</button>
@@ -197,7 +196,7 @@
 					<div class="banner__img-container">
 						<img class="banner__part1-img i18nImg" data-i18n="banner_img1" src="./img/foto3.png" alt="crema">
 					</div>
-					<button class="btn btn-secondary btn__custom banner__btn i18nAtt animated pulse" data-i18n="btn_text" onclick="goForm()">¡MUESTRA GRATIS!</button>
+					<button class="btn btn-secondary btn__custom banner__btn i18nAtt animated pulse" data-i18n="btn_text" onclick="btn_end_page()">¡MUESTRA GRATIS!</button>
 				</div>
 			</div>
 			<div class="col-lg-6 d-none d-lg-block">
