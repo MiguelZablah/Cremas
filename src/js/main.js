@@ -2,9 +2,15 @@
 
 /* global proximus, trivia, langObj */
 
-var touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 // Action Liseners
-document.getElementById('btn_welcome').addEventListener(touchEvent, btn_welcome);
+window.onload = function() {
+	document.getElementById('btn_welcome').addEventListener('touchstart', function(e) {
+		e.stopPropagation();
+		document.getElementById('btn_welcome').click();
+	});
+};
+
+document.getElementById('btn_welcome').addEventListener('click', btn_welcome);
 
 function calcTrivia() { // eslint-disable-line
 	let triviaRes = trivia.getCheck();
@@ -104,7 +110,7 @@ function WidthChange(mq){
 
 // Btn steps
 function btn_welcome(e) { // eslint-disable-line
-    e.preventDefault();
+	e.preventDefault();
 	callEndpoint('address');
 	showMobile();
 }
